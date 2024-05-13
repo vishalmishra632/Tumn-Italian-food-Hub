@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div [dir]="isRtl">
+  <app-headder></app-headder>
+
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
+  <!--<div class="rtl-layout"><a class="text-xl" href="javascript:void(0);" (click)="changeDirection()" *ngIf="!(_router.url.includes('/myaccount')||_router.url.includes('/myaddress')||_router.url.includes('/mypersonalinformation')||_router.url.includes('/mybillingaddress')||_router.url.includes('/orders')||_router.url.includes('/ordersdetails')||_router.url.includes('/customerprivatearea'))">RTL</a></div>-->
+  <app-footer></app-footer>
+ 
+
+  <!--Scroll to top-->
+  <button [ngClass]="{'show-scroll': showScroll}" (click)="scrollToTop()" class="scroll-to-top">
+     ➤
+  </button>
+</div>

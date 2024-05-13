@@ -1,0 +1,123 @@
+<section class="contactpage myacount">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12">
+        <div class="myaccount-title">
+          <h1>My Account</h1>
+          <p>Welcome to your account! Here you can manage your orders an dpersonal information.</p>
+        </div>
+
+        <div class="account_menu">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <a href="javascript:void(0)">
+                <div class="ac_nav">
+                  <div class="ac_nav-icon">
+                    <img src="../../assets/img/account/order.png">
+                  </div>
+
+                  <div class="ac_nav_text" [routerLink]="['/orders']">
+                    My Orders
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <a href="javascript:void(0)">
+                <div class="ac_nav">
+                  <div class="ac_nav-icon">
+                    <img src="../../assets/img/account/notification.png">
+                  </div>
+
+                  <div class="ac_nav_text" [routerLink]="['/customerprivatearea']" >
+                    My Messages
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>
+            <!--<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <a href="javascript:void(0)">
+                <div class="ac_nav">
+                  <div class="ac_nav-icon">
+                    <img src="../../assets/img/account/coupon.png">
+                  </div>
+
+                  <div class="ac_nav_text">
+                    My Discount Coupons
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>-->
+
+          </div>
+
+        </div>
+
+        <div class="account_menu">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <a href="javascript:void(0)">
+                <div class="ac_nav">
+                  <div class="ac_nav-icon">
+                    <img src="../../assets/img/account/my_address.png">
+                  </div>
+
+                  <div class="ac_nav_text" [routerLink]="['/myaddress']">
+                    My Address
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="account_menu">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <a href="javascript:void(0)">
+                <div class="ac_nav">
+                  <div class="ac_nav-icon">
+                    <img src="../../assets/img/account/information.png">
+                  </div>
+
+                  <div class="ac_nav_text" [routerLink]="['/mypersonalinformation']">
+                    My Personal Information
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="account-home">
+          <a routerLink="" class="btn gohome"><i class="fa fa-caret-left" aria-hidden="true"></i>Home</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

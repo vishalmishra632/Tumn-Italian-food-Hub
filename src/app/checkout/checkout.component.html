@@ -1,0 +1,461 @@
+<!--<app-headder *ngIf="!_router.url.includes('/checkout')"></app-headder>-->
+
+<!--<section class="hm_benefits shopping_cartbenefits">
+  <div class="container-fluid">
+
+      <div class="row">
+          <div class="col-xl-2">
+            <div class="shopping_cartlogo"><img src="../../assets/img/shoppingcart_logo.jpg"></div>
+          </div>
+          <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+            <div class="shopcart_benefits">
+              <div class="hm_title">
+                <h4>benefits</h4>
+              </div>
+    
+              <div class="beni-slider">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="benfit_info">
+                                <div class="benefit_img">
+                                  <a href="#"><img src="../../assets/img/benefit1.png"> </a>
+                                </div>
+                                <div class="benfit_des">
+                                  <h4>lorem Ipsum</h4>
+                                  <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="benfit_info">
+                                <div class="benefit_img">
+                                  <a href="#"><img src="../../assets/img/benefit2.png"> </a>
+                                </div>
+                                <div class="benfit_des">
+                                  <h4>lorem Ipsum</h4>
+                                  <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="benfit_info">
+                                <div class="benefit_img">
+                                  <a href="#"><img src="../../assets/img/benefit3.png"> </a>
+                                </div>
+                                <div class="benfit_des">
+                                  <h4>lorem Ipsum</h4>
+                                  <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+    
+    
+              </div>
+    
+    
+            </div>
+          </div>
+       
+       
+        </div>
+
+  </div>
+</section>-->
+
+<section class="checkout-step">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+        <div class="yr_data">
+          <h2 class="title3">1. Your Data</h2>
+
+          <div class="main-step">
+            <h3 class="title_sub">Login</h3>
+
+            <div class="form-group">
+              <input type="email" class="form-control"  placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control"  placeholder="Enter Password">
+            </div>
+
+          </div>
+
+          <div class="main-step">
+            <h3 class="title_sub">Not Registered Yet?</h3>
+
+            <div class="form-group">
+              <input type="text" class="form-control"  placeholder="First Name">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control"  placeholder="Last Name">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control"  placeholder="Address" rows="3"></textarea>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <input type="text" class="form-control"  placeholder="Zip">
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <select class="custom-select">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <select class="custom-select">
+                <option selected>Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-control"  placeholder="email">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control"  placeholder="Telephone">
+            </div>
+
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">use the same address as shipping</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Create Account</label>
+              </div>
+            </div>
+            <div class="okbtn">
+                <button class="btn redbtn mt-3" type="submit">Ok</button>
+            </div>
+           
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 border_left-rtl">
+
+<div class="paydel">
+    <h2 class="title3">2. Payment & Delivery</h2>
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+              <a href="javascript:void(0)" class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h5 class="mb-0">             
+                  Payment Methods             
+            </h5>
+          </a>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <div class="main-step">
+     
+                    <div class="pay_del-radio">
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio1">Payment Method 1</label>
+                        </div>
+                      </div>
+        
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio2">Payment Method 2</label>
+                        </div>
+                      </div>
+        
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio3">Payment Method 3</label>
+                        </div>
+                      </div>
+        
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio4">Payment Method 4</label>
+                        </div>
+                      </div>
+        
+        
+                    </div>
+        
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+              <a href="javascript:void(0)" class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h5 class="mb-0">            
+                  Tracking Conditions            
+            </h5>
+          </a>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <div class="main-step">     
+                    <div class="pay_del-radio">
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio01" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio01">Option 1</label>
+                        </div>
+                      </div>        
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio02" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio02">Option 2</label>
+                        </div>
+                      </div>        
+                    </div>        
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+              <a href="javascript:void(0)" class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h5 class="mb-0">              
+                  Shipping Fees           
+            </h5>
+          </a>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">             
+          <div class="main-step">  
+              <div class="pay_del-radio">
+                <div class="form-group">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio05" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio05">Option 1 (+0)</label>
+                  </div>
+                </div>  
+                <div class="form-group">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio06" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio06">Option 2 (+5€)</label>
+                  </div>
+                </div>  
+                <div class="form-group">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio07" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio07">Option 3 (+10€)</label>
+                  </div>
+                </div>  
+              </div>  
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header" id="headingfour">
+                <a href="javascript:void(0)" class="btn collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+              <h5 class="mb-0">               
+                    Additional Services             
+              </h5>
+            </a>
+            </div>
+            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+              <div class="card-body">
+                  <div class="main-step">
+
+                      <p class="add-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>         
+          
+                      <div class="add-svr">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                          <input class="quantity" min="0" name="quantity" placeholder="Quantity" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        </div>
+                    
+                        <div class="hc_btn"><button type="submit">Add</button></div>          
+          
+                      </div>
+          
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+</div>
+
+
+
+
+
+      </div>
+
+
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+        <div class="summery-step">
+          <h2 class="title3">3. Summary</h2>
+
+          <div class="pdr-col">
+            <div class="pdr-main">
+              <div class="pdr-item">
+                <p>Lorem ipsum dolor sit amet,</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 9.99</p>
+              </div>
+            </div>
+
+            <div class="pdr-main">
+              <div class="pdr-item">
+                <p>Lorem ipsum</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 9.99</p>
+              </div>
+            </div>
+
+            <div class="pdr-main">
+              <div class="pdr-item">
+                <p>Lorem ipsum</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 9.99</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="pdr-col mt-4">
+            <div class="pdr-main red-text">
+              <div class="pdr-item">
+                <p>Sub Total</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 29.99</p>
+              </div>
+            </div>
+
+
+            <div class="pdr-main text-bold">
+              <div class="pdr-item">
+                <p>Shipping Fee</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 5.99</p>
+              </div>
+            </div>
+
+            <div class="pdr-main text-bold">
+              <div class="pdr-item">
+                <p>Coupon</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 5.99</p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+
+          <div class="pdr-col mt-3">
+            <div class="pdr-main red-text mb-0">
+              <div class="pdr-item">
+                <p>Total</p>
+              </div>
+
+              <div class="pdr-itemprc">
+                <p>€ 29.99</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="check_cop">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter Coupon Code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Add</button>
+            </div>
+          </div>
+
+          <div class="form-group mt-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck11">
+              <label class="custom-control-label" for="customCheck11">Agree Terms & Conditions</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck12">
+              <label class="custom-control-label" for="customCheck12">terms and conditions treatment by</label>
+            </div>
+          </div>
+
+          <div class="form-group col-md-12 mt-5 text-center">
+            <button type="button" class="btn btn-danger payno" [routerLink]="['/thankyou']">Pay Now</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="clearfix"></div>
+
+
+

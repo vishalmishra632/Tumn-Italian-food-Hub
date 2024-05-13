@@ -1,0 +1,90 @@
+<section class="site_breadcurm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/myaccount']">My Account </a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Orders</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contactpage ads-col my-ordercol">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="myaccount-title">
+          <h1>here you can:</h1>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur <br>
+            -adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+          </p>
+        </div>
+
+        <div class="order_table">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Order Reference</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Total Price</th>
+                  <th scope="col">DOB</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Re-Payment</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Invoice</th>
+                  <th scope="col">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">671242</th>
+                  <td>03/01/2019</td>
+                  <td>25 €</td>
+                  <td>10/12/1980</td>
+                  <td>PAYPAL</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-confirm btn-sm">Confirmed</button></td>
+                  <td>
+                    <div class="pdf-tabl">
+                      <i><img src="../../assets/img/account/pdf-icon.png"></i>PDF
+                    </div>
+                  </td>
+                  <td>
+                    <div class="restore_btn">
+                      <button class="btn blackbtn btn-detl" type="button">Details</button>
+                      <a href="javascript:void(0)" class="reorder-btn"><i><img src="../../assets/img/account/restore.png"></i>Reorders</a>
+                    </div>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+
+        <div class="addnew-col goback">
+          <a [routerLink]="['/myaccount']" class="btn updatebtn"><i class="fa fa-caret-left" aria-hidden="true"></i> Go Back to My Account</a>
+          <a routerLink="" class="btn orange2btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Home</a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>

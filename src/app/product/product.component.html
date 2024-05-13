@@ -1,0 +1,794 @@
+<!--<section class="site_breadcurm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item"><a routerLink="/categories">Categories</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Product</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+
+<section class="page_col prodc">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
+        <div class="pro_slider product-slider-section-1">
+          <!--
+          <div id="ninja-slider" style="float:left;">
+                      <div class="slider-inner">
+                          <ul>
+                              <li><a class="ns-img" href="img/product-slider/1.jpg"></a></li>
+                              <li><a class="ns-img" href="img/product-slider/2.jpg"></a></li>
+                              <li><a class="ns-img" href="img/product-slider/3.jpg"></a></li>
+                              <li><a class="ns-img" href="img/product-slider/4.jpg"></a></li>
+                              <li><a class="ns-img" href="img/product-slider/5.jpg"></a></li>
+                              <li><a class="ns-img" href="img/product-slider/6.jpg"></a></li>
+
+                          </ul>
+                          <div class="fs-icon" title="Expand/Close"></div>
+                      </div>
+                  </div>
+
+          <div id="thumbnail-slider" style="float:left;">
+                      <div class="inner">
+                          <ul>
+                              <li>
+                                  <a class="thumb" href="img/product-slider/01.jpg"></a>
+                              </li>
+                              <li>
+                                  <a class="thumb" href="img/product-slider/02.jpg"></a>
+                              </li>
+                              <li>
+                                  <a class="thumb" href="img/product-slider/03.jpg"></a>
+                              </li>
+                              <li>
+                                  <a class="thumb" href="img/product-slider/04.jpg"></a>
+                              </li>
+                              <li>
+                                  <a class="thumb" href="img/product-slider/05.jpg"></a>
+                              </li>
+                              <li>
+                                  <a class="thumb" href="img/product-slider/06.jpg"></a>
+                              </li>
+
+                          </ul>
+                      </div>
+                  </div>
+          -->
+
+          <div id="productslider-1" class="carousel slide" data-ride="carousel">
+            <div class="row">
+              <div class="col-lg-10 col-md-10 pad-rtl0">
+                <div class="carousel-inner">
+                  <div class="carousel-item hoverlay active" style="background-image: url('../../assets/img/product-slider/1.jpg');">
+                  </div>
+                  <div class="carousel-item hoverlay" style="background-image: url('../../assets/img/product-slider/2.jpg');">
+                  </div>
+                  <div class="carousel-item hoverlay" style="background-image: url('../../assets/img/product-slider/3.jpg');">
+                  </div>
+                  <div class="carousel-item hoverlay" style="background-image: url('../../assets/img/product-slider/4.jpg');">
+                  </div>
+                  <div class="carousel-item" style="">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <!-- <div class="carousel-item" style="background-image: url('../../assets/img/product-slider/6.jpg');">
+                    <img class="img-fluid" src="assets/img/proudct-slider-6.jpeg" alt="Seventh slide"> 
+                  </div>-->
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 pd-left0">
+                <ol class="carousel-indicators position-static">
+                  <li data-target="#productslider-1" data-slide-to="0" class="active d-flex align-items-center">
+                    <div class="data-slide-image">
+                      <img class="img-fluid" src="../../assets/img/product-slider/01.jpg" alt="First slide">
+                    </div>
+                  </li>
+                  <li data-target="#productslider-1" data-slide-to="1" class="d-flex align-items-center">
+                    <div class="data-slide-image">
+                      <img class="img-fluid" src="../../assets/img/product-slider/02.jpg" alt="First slide">
+                    </div>
+                  </li>
+                  <li data-target="#productslider-1" data-slide-to="2" class="d-flex align-items-center">
+                    <div class="data-slide-image">
+                      <img class="img-fluid" src="../../assets/img/product-slider/03.jpg" alt="First slide">
+                    </div>
+                  </li>
+                  <li data-target="#productslider-1" data-slide-to="3" class="d-flex align-items-center">
+                    <div class="data-slide-image">
+                      <img class="img-fluid" src="../../assets/img/product-slider/04.jpg" alt="First slide">
+                    </div>
+                  </li>
+                  <li data-target="#productslider-1" data-slide-to="4" class="d-flex align-items-center">
+                    <div class="data-slide-image">
+
+                      <img class="img-fluid" src="../../assets/img/product-slider/05.jpg" alt="First slide">
+                    </div>
+                  </li>
+                  </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+        <div class="prod-des">
+          <h1>Product Name</h1>
+          <h2>Producer Name</h2>
+          <h3>Liguria</h3>
+          <div class="prod-qty">
+            <div class="price-coll">
+              <div class="prd-price">
+                € 9.99
+              </div>
+              <div class="prd-q">
+                <div class="number-input">
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                  <input class="quantity" min="0" name="quantity" placeholder="Quantity" type="number">
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+
+              </div>
+            </div>
+            <div class="cart-col">
+              <button type="button" class="btn cartbtn">Add to Basket</button>
+            </div>
+            <div class="prd-info">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci
+                lacinia, semper magna a, pretium nulla. Maecenas fringilla interdum
+                vulputate. Maecenas eget viverra arcu. Curabitur et massa fermentum,
+                semper eros id, condimentum nisl.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="prd-threecol">
+  <div class="container-fluid">
+    <div class="product-tab">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">Description</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="false">specification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="false">Reviews</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="prd-tree-inner">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+              massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+              felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+              justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+              venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+              Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+              consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, </p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="prd-tree-inner">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="prods1">
+                  <h1 class="title1">Producers</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci lacinia, semper magna a,
+                    pretium nulla. Maecenas fringilla interdum vulputate. Maecenas eget viverra arcu. Curabitur et
+                    massa fermentum, semper eros id, condimentum nisl.
+                  </p>
+                  <div class="produ">
+                    <img src="../../assets/img/rcatimg2.jpg">
+                  </div>
+                  <div class="usee_more"><a href="javascript:void(0)">Try This</a></div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="innut">
+                  <div class="ingred">
+                    <h1 class="title1">Ingredients and nutritons</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci lacinia, semper magna a,
+                      pretium nulla. Maecenas fringilla interdum vulputate. Maecenas eget viverra arcu. Curabitur et
+                      massa fermentum, semper eros id, condimentum nisl.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci lacinia, semper magna a,
+                      pretium nulla. Maecenas fringilla interdum vulputate.</p>
+                  </div>
+                  <div class="ingred">
+                    <h1 class="title1">Details</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci lacinia, semper magna a,
+                      pretium nulla. Maecenas fringilla interdum vulputate. Maecenas eget viverra arcu. Curabitur et
+                      massa fermentum, semper eros id, condimentum nisl.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci lacinia, </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="pair_heading">
+                  <h1 class="title1">Pairing</h1>
+                </div>
+                <div class="pairing-col">
+                  <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                      <div class="pairing-img">
+                        <img src="../../assets/img/rcatimg1.jpg">
+                      </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
+                      <div class="pairing-des">
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <a href="javascript:void(0)">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pairing-col">
+                  <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                      <div class="pairing-img">
+                        <img src="../../assets/img/rcatimg5.jpg">
+                      </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
+                      <div class="pairing-des">
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <a href="javascript:void(0)">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pairing-col">
+                  <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                      <div class="pairing-img">
+                        <img src="../../assets/img/rcatimg12.jpg">
+                      </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
+                      <div class="pairing-des">
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <a href="javascript:void(0)">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="prd-tree-inner">
+            <div class="main-rewcol">
+              <div class="tab-reviews">
+                <div class="row">
+                  <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4">
+                    <div class="tab-rew-img">
+                      <img src="../../assets/img/rcatimg12.jpg">
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8">
+                    <div class="tab-rew-des">
+                      <h2>Rome and Lazio</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, </p>
+                      <div class="review_rating">
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar_half.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-reviews">
+                <div class="row">
+                  <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4">
+                    <div class="tab-rew-img">
+                      <img src="../../assets/img/rcatimg12.jpg">
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8">
+                    <div class="tab-rew-des">
+                      <h2>Rome and Lazio</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, </p>
+                      <div class="review_rating">
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar_half.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-reviews review-br0">
+                <div class="row">
+                  <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4">
+                    <div class="tab-rew-img">
+                      <img src="../../assets/img/rcatimg12.jpg">
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8">
+                    <div class="tab-rew-des">
+                      <h2>Rome and Lazio</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, </p>
+                      <div class="review_rating">
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar.png"></a>
+                        <a href="javascript:void(0)"><img src="../../assets/img/rstar_half.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="review-input-form">
+               <p class="rev-head"> Give Us a Review</p>
+                <div class="comment-form">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 mob-name">                   
+                                    <label for="">Upload Image <span class="red">*</span></label>
+                                    <input type="file" class="form-control">                     
+                                 
+                            </div>
+                            
+                      </div>
+            
+                    </div>
+                    
+                    <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">                   
+                                            <label for="">Comment</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                    
+                                         
+                                    </div>
+                              
+                                    </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                          <div class="col-xl-12 col-lg-12 col-md-12">                   
+                                    <label for="">Ratings</label>
+                                    <fieldset class="rating">
+                                        <input type="radio" [name]="inputName" value="5" [checked]="rating===5" />
+                                        <label title="Rocks!" (click)='onClick(5)'>5 stars</label>
+                                      
+                                        <input type="radio" [name]="inputName" value="4" [checked]="rating===4" />
+                                        <label title="Pretty good" (click)='onClick(4)'>4 stars</label>
+                                      
+                                        <input type="radio" [name]="inputName" value="3" [checked]="rating===3" />
+                                        <label title="Meh" (click)='onClick(3)'>3 stars</label>
+                                      
+                                        <input type="radio" [name]="inputName" value="2" [checked]="rating===2" />
+                                        <label title="Kinda bad" (click)='onClick(2)'>2 stars</label>
+                                      
+                                        <input type="radio" [name]="inputName" value="1" [checked]="rating===1" />
+                                        <label title="Sucks big time" (click)='onClick(1)'>1 star</label>
+                                      </fieldset>               
+                                 
+                          </div>
+                      
+                        </div>
+                  </div>
+      
+                    <button type="submit" class="btn btn redbtn mt-3">Submit</button>
+                   
+                   
+                  </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="featues-col tr-reverse">
+  <div class="container-fluid">
+    <div class="hm_title">
+      <h4>Products</h4>
+      <small>From the same producers</small>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12" *ngIf="!infobemservice.isDirectionRtl">
+
+        <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="carouselTileItems$ | async">
+          <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+            <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+            <div class="hoverlay tile pos-rel" [style.background]="'url('+item+')'">
+              <!--<h1>{{i + 1}}</h1>-->
+              <div class="roll-over-effect">
+                <ul>
+                  <li class="qv"><a href="javascript:void(0);" data-toggle="modal" data-target="#quickview">Quick View</a>
+                  </li>
+                  <li class="sh"><a href="javascript:void(0)"><i class="fa fa-share-alt"></i></a></li>
+                  <li class="fav"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                  <li class="cart"><a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+              </div>
+              <div class="tag-label offer">
+                <p>Free <br /> 3 Days!</p>
+              </div>
+              <div class="tag-label Info">
+                <p>Low <br /> Stock!</p>
+              </div>
+            </div>
+            <p><a href="javascript:void(0)">Rome and Lazio</a></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas congue enim nec lacinia. Sed
+              rutrum vestibulum quam sit amet pulvinar.</p>
+
+            <div class="blog-rating style-a">
+              <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="blog-price">
+              <p> was: <del>€ 12.00</del> now: € 9.99</p>
+            </div>
+            <div class="blog-cart">
+              <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+            </div>
+
+
+          </ngu-tile>
+
+          <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+          <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+
+          <ul class="myPoint" NguCarouselPoint>
+            <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint"
+              (click)="myCarousel.moveTo(i)"></li>
+          </ul>
+        </ngu-carousel>
+
+      </div>
+      <div class="col-md-12" *ngIf="infobemservice.isDirectionRtl">
+
+        <ngu-carousel #myCarousel [inputs]="carouselTileConfigRtl" [dataSource]="carouselTileItems$ | async">
+          <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+            <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+            <div class="hoverlay tile pos-rel" [style.background]="'url('+item+')'">
+              <!--<h1>{{i + 1}}</h1>-->
+              <div class="roll-over-effect">
+                <ul>
+                  <li class="qv"><a href="javascript:void(0);" data-toggle="modal" data-target="#quickview">Quick View</a>
+                  </li>
+                  <li class="sh"><a href="javascript:void(0)"><i class="fa fa-share-alt"></i></a></li>
+                  <li class="fav"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                  <li class="cart"><a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+              </div>
+              <div class="tag-label offer">
+                <p>Free <br /> 3 Days!</p>
+              </div>
+              <div class="tag-label Info">
+                <p>Low <br /> Stock!</p>
+              </div>
+
+            </div>
+            <p><a href="#">Rome and Lazio</a></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas congue enim nec lacinia. Sed
+              rutrum vestibulum quam sit amet pulvinar.</p>
+            <div class="blog-rating style-a">
+              <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="blog-price">
+              <p> was: <del>€ 12.00</del> now: € 9.99</p>
+            </div>
+            <div class="blog-cart">
+              <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+            </div>
+          </ngu-tile>
+
+          <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+          <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+
+          <ul class="myPoint" NguCarouselPoint>
+            <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint"
+              (click)="myCarousel.moveTo(i)"></li>
+          </ul>
+        </ngu-carousel>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="hm_clientsays" id="clients">
+    <div class="container-fluid">
+      <div class="hm_title">
+        <h4>Clients</h4>
+        <small>says about us</small>
+      </div>
+      <div class="client_slider">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators cuserpics">
+            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"><img src="../../assets/img/client_says3.jpg"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="1"><img src="../../assets/img/client_says1.jpg"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="2"><img src="../../assets/img/client_says2.jpg"></li>
+          </ol>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="c_quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived not only five centuries.. </p>
+                <small>By</small>
+                <h5>George Danial</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="c_quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived not only five centuries.. </p>
+                <small>By</small>
+                <h5>George Danial</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="c_quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived not only five centuries.. </p>
+                <small>By</small>
+                <h5>George Danial</h5>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--container-fluid-->
+  </section>
+
+  <section class="banner_col">
+    <div class="container-fluid">
+      <div class="banner-tryimg">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlebanner">
+              <p>consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+              <a href="javascript:void(0)">Try This</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="hm_benefits" id="benefit">
+    <div class="container-fluid">
+      <div class="hm_title">
+        <h4>benefits</h4>
+        <small>lorem Ipsum is just a dummy text</small>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3  col-md-3">
+          <div class="benfit_info">
+            <div class="benefit_img">
+              <a href="javascript:void(0)"><img src="../../assets/img/benefit1.png"> </a>
+            </div>
+            <div class="benfit_des">
+              <h4>lorem Ipsum</h4>
+              <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-3-->
+        <div class="col-xl-3 col-lg-3  col-md-3">
+          <div class="benfit_info">
+            <div class="benefit_img">
+              <a href="javascript:void(0)"><img src="../../assets/img/benefit2.png"> </a>
+            </div>
+            <div class="benfit_des">
+              <h4>lorem Ipsum</h4>
+              <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-3-->
+        <div class="col-xl-3 col-lg-3  col-md-3">
+          <div class="benfit_info">
+            <div class="benefit_img">
+              <a href="#"><img src="../../assets/img/benefit3.png"> </a>
+            </div>
+            <div class="benfit_des">
+              <h4>lorem Ipsum</h4>
+              <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-3-->
+        <div class="col-xl-3 col-lg-3  col-md-3">
+          <div class="benfit_info">
+            <div class="benefit_img">
+              <a href="javascript:void(0)"><img src="../../assets/img/benefit4.png"> </a>
+            </div>
+            <div class="benfit_des">
+              <h4>lorem Ipsum</h4>
+              <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-3-->
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-4  col-md-4">
+          <div class="cbenfit_info">
+            <div class="cbenefit_img">
+              <a href="javascript:void(0)"><img src="../../assets/img/client1.png"> </a>
+            </div>
+            <div class="cbenfit_des">
+              <h4>Customer?</h4>
+              <p>Enter the Market</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-4-->
+        <div class="col-xl-4 col-lg-4  col-md-4">
+          <div class="cbenfit_info">
+            <div class="cbenefit_img">
+              <a href="javascript:void(0)"><img src="../../assets/img/client2.png"> </a>
+            </div>
+            <div class="cbenfit_des producr">
+              <h4>Producer?</h4>
+              <p>Discover</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-4-->
+        <div class="col-xl-4 col-lg-4  col-md-4">
+          <div class="cbenfit_info">
+            <div class="cbenefit_img">
+              <a href="javascript:void(0)"><img src="../../assets/img/client3.png"> </a>
+            </div>
+            <div class="cbenfit_des restaurta">
+              <h4>Restaurateur?</h4>
+              <p>Discover</p>
+            </div>
+          </div>
+          <!--benfit_info-->
+        </div>
+        <!--col-xl-4-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-fluid-->
+  </section>
+
+  <!-- quick-view Modal -->
+  <div class="qvpopup modal fade" id="quickview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="product-image">
+                <div class="ptag">
+                  <p>Lorem </p>
+                </div>
+                <img class="img-fluid" src="../../assets/img/modal-image.png" alt="image">
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+              <div class="product-info">
+                <h1 class="ptitle">Donec varius et nisl et varius. Vivamus eu sagittis libero. Aliquam et fermentum
+                  velit. </h1>
+                <p class="pcodes"><span>Code:123456</span><span>Lorem Impsum text</span></p>
+                <div class="price-prod">
+                  <div class="prd-price">
+                    € 9.99
+                  </div>
+                  <div class="addi-info">
+                    <span class="ai-icon"><i class="fa fa-truck" aria-hidden="true"></i> </span>
+                    <span class="ai-text"><strong>Lorem ipsum dolor</strong> Donec varius consectetur adipiscing elit.</span>
+                  </div>
+                </div>
+                <div class="prod-buy">
+                  <div class="prd-q">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                      <input class="quantity" min="0" name="quantity" placeholder="Quantity" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+
+                  </div>
+                  <div class="cart-col">
+                    <button type="button" class="btn cartbtn style-a">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="prod-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nibh quis diam accumsan
+                    lacinia. </p>
+                  <p>Donec varius et nisl et varius. Vivamus eu sagittis libero. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>

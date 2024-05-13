@@ -1,0 +1,356 @@
+<section class="site_breadcurm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/myaccount']">My Account </a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Orders</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contactpage ads-col">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="myaccount-title">
+          <h1>here you can:</h1>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur <br>
+            -adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+          </p>
+        </div>
+
+        <div class="order_table">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Order Reference</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Total Price</th>
+                  <th scope="col">DOB</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Re-Payment</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Invoice</th>
+                  <th scope="col">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">671242</th>
+                  <td>03/01/2019</td>
+                  <td>25 €</td>
+                  <td>10/12/1980</td>
+                  <td>PAYPAL</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-confirm btn-sm">Confirmed</button></td>
+                  <td>
+                    <div class="pdf-tabl">
+                      <i><img src="../../assets/img/account/pdf-icon.png"></i>PDF
+                    </div>
+                  </td>
+                  <td>
+                    <div class="restore_btn">
+                      <button class="btn blackbtn btn-detl" type="button">Details</button>
+                      <a href="javascript:void(0)" class="reorder-btn"><i><img src="../../assets/img/account/restore.png"></i>Reorders</a>
+                    </div>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+
+        <div class="order-box">
+          <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+              <p>Order Reference <span>671242</span>  -  Placed On <span>04/01/2019</span></p>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="reorder-col">
+                <a href="javascript:void(0)" class="btn reorder">Reorder <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="order-box pay">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+              <p>Carrier <span>IMX</span></p>
+              <p>Payment Method <span>PayPal</span></p>
+
+              <a href="javascript:void(0)" class="downpdf"><img src="../../assets/img/account/pdf-icon.png">Download Invoice as PDF</a>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="follow-col">
+          <h1>Follow Your Order Step By Step</h1>
+
+          <div class="order_table folow-tal">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" width="60">03/01/2019</th>
+                    <td><button type="button" class="btn btn-confirm btn-sm">Confirmed</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">03/01/2019</th>
+                    <td><button type="button" class="btn pendingbtn btn-sm">Pending</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="add_inv">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="order-box pay">
+                <h3>Delivery Address (Default Address)</h3>
+                <p>
+                  GIorgia Fois<br>
+                  Eurosaf Sri<br>
+                  VIa dei Sabelli 75<br>
+                  c/o Negozio di alimentri<br>
+                  Itely<br>
+                  ROma<br>
+                  00185 Roma<br>
+                  3358746952
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-sm-12">
+              <div class="order-box pay">
+                <h3>Invoice Address (Default Address)</h3>
+                <p>
+                  GIorgia Fois<br>
+                  Eurosaf Sri<br>
+                  VIa dei Sabelli 75<br>
+                  c/o Negozio di alimentri<br>
+                  Itely<br>
+                  ROma<br>
+                  00185 Roma<br>
+                  3358746952
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="follow-col">
+          <div class="order_table folow-tal">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Order Reference</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Total Price<br></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">671242</th>
+                    <td>
+                      Ocean Spray Salsa Di Mirtilli Rossi Con Frutti Interi
+                    </td>
+                    <td>1</td>
+                    <td>€ 3.89</td>
+                    <td>€ 3.89</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">671242</th>
+                    <td>
+                      Ocean Spray Salsa Di Mirtilli Rossi Con Frutti Interi
+                    </td>
+                    <td>1</td>
+                    <td>€ 3.89</td>
+                    <td>€ 3.89</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">671242</th>
+                    <td>
+                      Ocean Spray Salsa Di Mirtilli Rossi Con Frutti Interi
+                    </td>
+                    <td>1</td>
+                    <td>€ 3.89</td>
+                    <td>€ 3.89</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">671242</th>
+                    <td>
+                      Ocean Spray Salsa Di Mirtilli Rossi Con Frutti Interi
+                    </td>
+                    <td>1</td>
+                    <td>€ 3.89</td>
+                    <td>€ 3.89</td>
+                  </tr>
+                </tbody>
+
+                <tfoot class="light-tfoot">
+                  <tr>
+                    <th scope="row">Items (Tax Incl.)</th>
+                    <th colspan="4">€ 15.66</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total Vouchers</th>
+                    <th colspan="4">€ 0.89</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Shipping Fees (Tax Incl.)</th>
+                    <th colspan="4">€</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total</th>
+                    <th colspan="4">€ 24.14</th>
+                  </tr>
+                </tfoot>
+              </table>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="order_table">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Carrier</th>
+                  <th scope="col">Weight</th>
+                  <th scope="col">Shipping Fees</th>
+                  <th scope="col">Tracking Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">03/01/2019</th>
+                  <td>IMX</td>
+                  <td>10/12/11.394 kg</td>
+                  <td>€ 3.89</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+
+        <div class="got-ques">
+          <div class="myaccount-title">
+            <h1>Got a Question concernnig Your Order?</h1>
+            <p>-Lorem ipsum dolor sit amet, consectetur  </p>
+          </div>
+
+
+          <div class="got-quest-col">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="">Product</label>
+                <select class="custom-select">
+                  <option selected="">Choose Product</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="got-quest-col">
+            <div class="col-md-12">
+              <div class="form-group">
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="addnew-col save-q">
+            <div class="col-md-12">
+              <a href="javascript:void(0)" class="btn orange2btn">
+                Save <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </a>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="addnew-col goback">
+          <a [routerLink]="['/myaccount']" class="btn updatebtn"><i class="fa fa-caret-left" aria-hidden="true"></i> Go Back to My Account</a>
+          <a routerLink="" class="btn orange2btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Home</a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>

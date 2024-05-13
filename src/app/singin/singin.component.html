@@ -1,0 +1,85 @@
+
+
+
+<section class="splash-screen loginp">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-7 col-lg-7 col-md-12">
+        <div class="signin-img">
+          <img src="../../assets/img/signin-img.jpg">
+        </div>
+
+      </div>
+
+      <div class="col-xl-5 col-lg-5 col-md-12">
+        <div class="box-log">
+          <h1>Sign In</h1>
+          <div class="loginform">
+            <form [formGroup]="SinginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <!--<label>Email</label>-->
+                <div class="email-img">
+                  <img src="../../assets/img/emal.png">
+                </div>
+                <input type="email" formControlName="email" class="form-control"  placeholder="Enter Your Email*" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Email is required</div>
+                  <div *ngIf="f.email.errors.pattern">Email is not valid</div>
+                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <!--<label>Password</label>-->
+                <div class="email-img">
+                  <img src="../../assets/img/password.png">
+                </div>
+                <input type="password" formControlName="password" class="form-control"  placeholder="Enter Your Password*"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                  <div *ngIf="f.password.errors.required">Password is required</div>
+                  <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck12">
+                  <label class="custom-control-label" for="customCheck12">By clicking join now, you agree to TUMN User Agreement, <a href="#" class="dblock">Privacy Policy, and Cookie policy</a>.</label>
+                </div>
+              </div>
+
+              <div class="f-botm">
+                <button type="submit" class="btn redbtn">Sign In</button>
+                <div class="rtl-form">
+                  <a routerLink="/forgotpassword" class="forlink">Forgot Password?</a>                 
+                </div>
+              </div>
+              <div class="popdiv"><h6>Or Login with</h6></div>
+
+              <div class="form-social">             
+                  <a href="javascript:void(0)" class="fb btn">
+                      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                  </a>
+                  <a href="javascript:void(0)" class="google btn"><i class="fa fa-google fa-fw">
+                    </i> Login with Google+
+                  </a>
+
+                  <p>Click here to <a [routerLink]="['/singup']" class="createone">Create one</a></p>
+
+              </div>
+
+
+            </form>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>

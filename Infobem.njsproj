@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ab3774e-a687-4e64-80d9-49f54e1bc0a2}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <ToolsVersionPromptShown>2.6</ToolsVersionPromptShown>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".editorconfig" />
+    <Content Include=".gitignore" />
+    <Content Include=".vs\config\applicationhost.config" />
+    <Content Include=".vs\ProjectSettings.json" />
+    <Content Include=".vs\slnx.sqlite" />
+    <Content Include=".vs\VSWorkspaceState.json" />
+    <Content Include="angular.json" />
+    <Content Include="bin\Microsoft.NodejsTools.WebRole.dll" />
+    <Content Include="dist\3rdpartylicenses.txt" />
+    <Content Include="dist\about-banner.459689a4fcf50970abc9.jpg" />
+    <Content Include="dist\assets\css\bootstrap.min.css" />
+    <Content Include="dist\assets\css\font-awesome.css" />
+    <Content Include="dist\assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="dist\assets\css\media.css" />
+    <Content Include="dist\assets\css\product-slider-1.css" />
+    <Content Include="dist\assets\css\style.css" />
+    <Content Include="dist\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="dist\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="dist\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="dist\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="dist\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="dist\assets\fonts\FontAwesome.otf" />
+    <Content Include="dist\assets\img\about-banner.jpg" />
+    <Content Include="dist\assets\img\australia.png" />
+    <Content Include="dist\assets\img\benefit1.png" />
+    <Content Include="dist\assets\img\benefit2.png" />
+    <Content Include="dist\assets\img\benefit3.png" />
+    <Content Include="dist\assets\img\benefit4.png" />
+    <Content Include="dist\assets\img\blog\add.jpg" />
+    <Content Include="dist\assets\img\blog\blog-img.jpg" />
+    <Content Include="dist\assets\img\blog\blog-rtl-add.jpg" />
+    <Content Include="dist\assets\img\blog\blog-rtl-add2.jpg" />
+    <Content Include="dist\assets\img\blog\blogslider1.jpg" />
+    <Content Include="dist\assets\img\blog\slider1.jpg" />
+    <Content Include="dist\assets\img\blog\user.png" />
+    <Content Include="dist\assets\img\cart_icon.png" />
+    <Content Include="dist\assets\img\catimg1.jpg" />
+    <Content Include="dist\assets\img\catimg2.jpg" />
+    <Content Include="dist\assets\img\catimg3.jpg" />
+    <Content Include="dist\assets\img\catimg4.jpg" />
+    <Content Include="dist\assets\img\cat_bannimg.jpg" />
+    <Content Include="dist\assets\img\client1.png" />
+    <Content Include="dist\assets\img\client2.png" />
+    <Content Include="dist\assets\img\client3.png" />
+    <Content Include="dist\assets\img\client_says1.jpg" />
+    <Content Include="dist\assets\img\client_says2.jpg" />
+    <Content Include="dist\assets\img\client_says3.jpg" />
+    <Content Include="dist\assets\img\c_benfitbg.png" />
+    <Content Include="dist\assets\img\emal.png" />
+    <Content Include="dist\assets\img\f-logo.png" />
+    <Content Include="dist\assets\img\footer_tick.png" />
+    <Content Include="dist\assets\img\france.png" />
+    <Content Include="dist\assets\img\india.png" />
+    <Content Include="dist\assets\img\israel.png" />
+    <Content Include="dist\assets\img\label1.jpg" />
+    <Content Include="dist\assets\img\large-product.jpg" />
+    <Content Include="dist\assets\img\logo.jpg" />
+    <Content Include="dist\assets\img\logo1.jpg" />
+    <Content Include="dist\assets\img\mainslide_rightimg.jpg" />
+    <Content Include="dist\assets\img\main_slide1.jpg" />
+    <Content Include="dist\assets\img\mission1.jpg" />
+    <Content Include="dist\assets\img\modal-image.png" />
+    <Content Include="dist\assets\img\need_helpimg.png" />
+    <Content Include="dist\assets\img\New folder\p1 - Copy.jpg" />
+    <Content Include="dist\assets\img\New folder\p2 - Copy.jpg" />
+    <Content Include="dist\assets\img\New folder\p3 - Copy.jpg" />
+    <Content Include="dist\assets\img\New folder\p4 - Copy.jpg" />
+    <Content Include="dist\assets\img\old\cart_icon.png" />
+    <Content Include="dist\assets\img\old\user_icon.jpg" />
+    <Content Include="dist\assets\img\order.jpg" />
+    <Content Include="dist\assets\img\p1.jpg" />
+    <Content Include="dist\assets\img\p2.jpg" />
+    <Content Include="dist\assets\img\p3.jpg" />
+    <Content Include="dist\assets\img\p4.jpg" />
+    <Content Include="dist\assets\img\password.png" />
+    <Content Include="dist\assets\img\produ1.png" />
+    <Content Include="dist\assets\img\product-slider\01.jpg" />
+    <Content Include="dist\assets\img\product-slider\02.jpg" />
+    <Content Include="dist\assets\img\product-slider\03.jpg" />
+    <Content Include="dist\assets\img\product-slider\04.jpg" />
+    <Content Include="dist\assets\img\product-slider\05.jpg" />
+    <Content Include="dist\assets\img\product-slider\05old.jpg" />
+    <Content Include="dist\assets\img\product-slider\06.jpg" />
+    <Content Include="dist\assets\img\product-slider\1.jpg" />
+    <Content Include="dist\assets\img\product-slider\2.jpg" />
+    <Content Include="dist\assets\img\product-slider\3.jpg" />
+    <Content Include="dist\assets\img\product-slider\4.jpg" />
+    <Content Include="dist\assets\img\product-slider\5-old.jpg" />
+    <Content Include="dist\assets\img\product-slider\5.jpg" />
+    <Content Include="dist\assets\img\product-slider\6.jpg" />
+    <Content Include="dist\assets\img\pro_catbanr.jpg" />
+    <Content Include="dist\assets\img\pro_catrightimg.jpg" />
+    <Content Include="dist\assets\img\rcatimg1.jpg" />
+    <Content Include="dist\assets\img\rcatimg10.jpg" />
+    <Content Include="dist\assets\img\rcatimg11.jpg" />
+    <Content Include="dist\assets\img\rcatimg12.jpg" />
+    <Content Include="dist\assets\img\rcatimg2.jpg" />
+    <Content Include="dist\assets\img\rcatimg3.jpg" />
+    <Content Include="dist\assets\img\rcatimg4.jpg" />
+    <Content Include="dist\assets\img\rcatimg5.jpg" />
+    <Content Include="dist\assets\img\rcatimg6.jpg" />
+    <Content Include="dist\assets\img\rcatimg7.jpg" />
+    <Content Include="dist\assets\img\rcatimg8.jpg" />
+    <Content Include="dist\assets\img\rcatimg9.jpg" />
+    <Content Include="dist\assets\img\rstar.png" />
+    <Content Include="dist\assets\img\rstar_half.png" />
+    <Content Include="dist\assets\img\search_icon.png" />
+    <Content Include="dist\assets\img\shoppingcart_logo.jpg" />
+    <Content Include="dist\assets\img\sidebar_catimg.jpg" />
+    <Content Include="dist\assets\img\signin-img.jpg" />
+    <Content Include="dist\assets\img\signup-img.jpg" />
+    <Content Include="dist\assets\img\team1.jpg" />
+    <Content Include="dist\assets\img\team2.jpg" />
+    <Content Include="dist\assets\img\team3.jpg" />
+    <Content Include="dist\assets\img\try-this-banner.jpg" />
+    <Content Include="dist\assets\img\united-kingdom.png" />
+    <Content Include="dist\assets\img\united-states.png" />
+    <Content Include="dist\assets\img\user_icon.jpg" />
+    <Content Include="dist\assets\img\user_icon.png" />
+    <Content Include="dist\c_benfitbg.080c1cce65852c0d2a20.png" />
+    <Content Include="dist\favicon.ico" />
+    <Content Include="dist\fontawesome-webfont.674f50d287a8c48dc19b.eot" />
+    <Content Include="dist\fontawesome-webfont.912ec66d7572ff821749.svg" />
+    <Content Include="dist\fontawesome-webfont.af7ae505a9eed503f8b8.woff2" />
+    <Content Include="dist\fontawesome-webfont.b06871f281fee6b241d6.ttf" />
+    <Content Include="dist\fontawesome-webfont.fee66e712a8a08eef580.woff" />
+    <Content Include="dist\index.html" />
+    <Content Include="dist\mainslide_rightimg.76eeb4ef5a86870f4000.jpg" />
+    <Content Include="dist\pro_catrightimg.e9139a60943fcdab5e92.jpg" />
+    <Content Include="dist\search_icon.880453d4c4082cbc2ef6.png" />
+    <Content Include="dist\styles.2c5cb4615b1553cad4e2.css" />
+    <Content Include="dist\try-this-banner.5571b61e9629b8d35ee8.jpg" />
+    <Content Include="obj\Debug\Infobem.njsproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\Infobem.njsprojAssemblyReference.cache" />
+    <Content Include="obj\Release\Infobem.njsproj.CoreCompileInputs.cache" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="src\app\aboutus\aboutus.component.css" />
+    <Content Include="src\app\aboutus\aboutus.component.html" />
+    <Content Include="src\app\blogdetails\blogdetails.component.css" />
+    <Content Include="src\app\blogdetails\blogdetails.component.html" />
+    <Content Include="src\app\blog\blog.component.css" />
+    <Content Include="src\app\blog\blog.component.html" />
+    <Content Include="src\app\categorytwo\categorytwo.component.css" />
+    <Content Include="src\app\categorytwo\categorytwo.component.html" />
+    <Content Include="src\app\checkout\checkout.component.css" />
+    <Content Include="src\app\checkout\checkout.component.html" />
+    <Content Include="src\app\contact\contact.component.css" />
+    <Content Include="src\app\contact\contact.component.html" />
+    <Content Include="src\app\customerprivatearea\customerprivatearea.component.css" />
+    <Content Include="src\app\customerprivatearea\customerprivatearea.component.html" />
+    <Content Include="src\app\error\error.component.css" />
+    <Content Include="src\app\error\error.component.html" />
+    <Content Include="src\app\faq\faq.component.css" />
+    <Content Include="src\app\faq\faq.component.html" />
+    <Content Include="src\app\forgotpassword\forgotpassword.component.css" />
+    <Content Include="src\app\forgotpassword\forgotpassword.component.html" />
+    <Content Include="src\app\myaccount\myaccount.component.css" />
+    <Content Include="src\app\myaccount\myaccount.component.html" />
+    <Content Include="src\app\myaddress\myaddress.component.css" />
+    <Content Include="src\app\myaddress\myaddress.component.html" />
+    <Content Include="src\app\mybillingaddress\mybillingaddress.component.css" />
+    <Content Include="src\app\mybillingaddress\mybillingaddress.component.html" />
+    <Content Include="src\app\mypersonalinformation\mypersonalinformation.component.css" />
+    <Content Include="src\app\mypersonalinformation\mypersonalinformation.component.html" />
+    <Content Include="src\app\orderdetails\orderdetails.component.css" />
+    <Content Include="src\app\orderdetails\orderdetails.component.html" />
+    <Content Include="src\app\orders\orders.component.css" />
+    <Content Include="src\app\orders\orders.component.html" />
+    <Content Include="src\app\pageproductlist\pageproductlist.component.css" />
+    <Content Include="src\app\pageproductlist\pageproductlist.component.html" />
+    <Content Include="src\app\privacypolicy\privacypolicy.component.css" />
+    <Content Include="src\app\privacypolicy\privacypolicy.component.html" />
+    <Content Include="src\app\producer\producer.component.css" />
+    <Content Include="src\app\producer\producer.component.html" />
+    <Content Include="src\app\searchresult\searchresult.component.css" />
+    <Content Include="src\app\searchresult\searchresult.component.html" />
+    <Content Include="src\app\shoppingcart\shoppingcart.component.css" />
+    <Content Include="src\app\shoppingcart\shoppingcart.component.html" />
+    <Content Include="src\app\singin\singin.component.css" />
+    <Content Include="src\app\singin\singin.component.html" />
+    <Content Include="src\app\singup\singup.component.css" />
+    <Content Include="src\app\singup\singup.component.html" />
+    <Content Include="src\app\terms\terms.component.css" />
+    <Content Include="src\app\terms\terms.component.html" />
+    <Content Include="src\app\thankyou\thankyou.component.css" />
+    <Content Include="src\app\thankyou\thankyou.component.html" />
+    <Content Include="src\assets\.gitkeep" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="src\assets\fonts\FontAwesome.otf" />
+    <Content Include="src\assets\img\about-banner.jpg" />
+    <Content Include="src\assets\img\account\coupon.png" />
+    <Content Include="src\assets\img\account\information.png" />
+    <Content Include="src\assets\img\account\my_address.png" />
+    <Content Include="src\assets\img\account\notification.png" />
+    <Content Include="src\assets\img\account\order.png" />
+    <Content Include="src\assets\img\account\pdf-icon.png" />
+    <Content Include="src\assets\img\account\restore.png" />
+    <Content Include="src\assets\img\australia.png" />
+    <Content Include="src\assets\img\benefit1.png" />
+    <Content Include="src\assets\img\benefit2.png" />
+    <Content Include="src\assets\img\benefit3.png" />
+    <Content Include="src\assets\img\benefit4.png" />
+    <Content Include="src\assets\img\blog\add.jpg" />
+    <Content Include="src\assets\img\blog\blog-img.jpg" />
+    <Content Include="src\assets\img\blog\blog-rtl-add.jpg" />
+    <Content Include="src\assets\img\blog\blog-rtl-add2.jpg" />
+    <Content Include="src\assets\img\blog\blogslider1.jpg" />
+    <Content Include="src\assets\img\blog\slider1.jpg" />
+    <Content Include="src\assets\img\blog\user.png" />
+    <Content Include="src\assets\img\cart_icon.png" />
+    <Content Include="src\assets\img\catimg1.jpg" />
+    <Content Include="src\assets\img\catimg2.jpg" />
+    <Content Include="src\assets\img\catimg3.jpg" />
+    <Content Include="src\assets\img\catimg4.jpg" />
+    <Content Include="src\assets\img\cat_bannimg.jpg" />
+    <Content Include="src\assets\img\client1.png" />
+    <Content Include="src\assets\img\client2.png" />
+    <Content Include="src\assets\img\client3.png" />
+    <Content Include="src\assets\img\client_says1.jpg" />
+    <Content Include="src\assets\img\client_says2.jpg" />
+    <Content Include="src\assets\img\client_says3.jpg" />
+    <Content Include="src\assets\img\c_benfitbg.png" />
+    <Content Include="src\assets\img\emal.png" />
+    <Content Include="src\assets\img\f-logo.png" />
+    <Content Include="src\assets\img\footer_tick.png" />
+    <Content Include="src\assets\img\france.png" />
+    <Content Include="src\assets\img\india.png" />
+    <Content Include="src\assets\img\israel.png" />
+    <Content Include="src\assets\img\label1.jpg" />
+    <Content Include="src\assets\img\large-product.jpg" />
+    <Content Include="src\assets\img\logo.jpg" />
+    <Content Include="src\assets\img\logo1.jpg" />
+    <Content Include="src\assets\img\mainslide_rightimg.jpg" />
+    <Content Include="src\assets\img\main_slide1.jpg" />
+    <Content Include="src\assets\img\mission1.jpg" />
+    <Content Include="src\assets\img\modal-image.png" />
+    <Content Include="src\assets\img\need_helpimg.png" />
+    <Content Include="src\assets\img\New folder\p1 - Copy.jpg" />
+    <Content Include="src\assets\img\New folder\p2 - Copy.jpg" />
+    <Content Include="src\assets\img\New folder\p3 - Copy.jpg" />
+    <Content Include="src\assets\img\New folder\p4 - Copy.jpg" />
+    <Content Include="src\assets\img\old\cart_icon.png" />
+    <Content Include="src\assets\img\old\user_icon.jpg" />
+    <Content Include="src\assets\img\order.jpg" />
+    <Content Include="src\assets\img\p1.jpg" />
+    <Content Include="src\assets\img\p2.jpg" />
+    <Content Include="src\assets\img\p3.jpg" />
+    <Content Include="src\assets\img\p4.jpg" />
+    <Content Include="src\assets\img\password.png" />
+    <Content Include="src\assets\img\produ1.png" />
+    <Content Include="src\assets\img\product-slider\01.jpg" />
+    <Content Include="src\assets\img\product-slider\02.jpg" />
+    <Content Include="src\assets\img\product-slider\03.jpg" />
+    <Content Include="src\assets\img\product-slider\04.jpg" />
+    <Content Include="src\assets\img\product-slider\05.jpg" />
+    <Content Include="src\assets\img\product-slider\05old.jpg" />
+    <Content Include="src\assets\img\product-slider\06.jpg" />
+    <Content Include="src\assets\img\product-slider\1.jpg" />
+    <Content Include="src\assets\img\product-slider\2.jpg" />
+    <Content Include="src\assets\img\product-slider\3.jpg" />
+    <Content Include="src\assets\img\product-slider\4.jpg" />
+    <Content Include="src\assets\img\product-slider\5-old.jpg" />
+    <Content Include="src\assets\img\product-slider\5.jpg" />
+    <Content Include="src\assets\img\product-slider\6.jpg" />
+    <Content Include="src\assets\img\pro_catbanr.jpg" />
+    <Content Include="src\assets\img\pro_catrightimg.jpg" />
+    <Content Include="src\assets\img\rcatimg1.jpg" />
+    <Content Include="src\assets\img\rcatimg10.jpg" />
+    <Content Include="src\assets\img\rcatimg11.jpg" />
+    <Content Include="src\assets\img\rcatimg12.jpg" />
+    <Content Include="src\assets\img\rcatimg2.jpg" />
+    <Content Include="src\assets\img\rcatimg3.jpg" />
+    <Content Include="src\assets\img\rcatimg4.jpg" />
+    <Content Include="src\assets\img\rcatimg5.jpg" />
+    <Content Include="src\assets\img\rcatimg6.jpg" />
+    <Content Include="src\assets\img\rcatimg7.jpg" />
+    <Content Include="src\assets\img\rcatimg8.jpg" />
+    <Content Include="src\assets\img\rcatimg9.jpg" />
+    <Content Include="src\assets\img\rstar.png" />
+    <Content Include="src\assets\img\rstar_half.png" />
+    <Content Include="src\assets\img\search_icon.png" />
+    <Content Include="src\assets\img\shoppingcart_logo.jpg" />
+    <Content Include="src\assets\img\sidebar_catimg.jpg" />
+    <Content Include="src\assets\img\signin-img.jpg" />
+    <Content Include="src\assets\img\signup-img.jpg" />
+    <Content Include="src\assets\img\team1.jpg" />
+    <Content Include="src\assets\img\team2.jpg" />
+    <Content Include="src\assets\img\team3.jpg" />
+    <Content Include="src\assets\img\try-this-banner.jpg" />
+    <Content Include="src\assets\img\united-kingdom.png" />
+    <Content Include="src\assets\img\united-states.png" />
+    <Content Include="src\assets\img\user_icon.jpg" />
+    <Content Include="src\assets\img\user_icon.png" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
+    <Content Include="README.md" />
+    <Content Include="e2e\tsconfig.e2e.json" />
+    <Compile Include="dist\10.010e51d56f0c6482ed05.js" />
+    <Compile Include="dist\11.539b2bd2a4e9f3cf9aa2.js" />
+    <Compile Include="dist\12.c965f0e5654595fdb28d.js" />
+    <Compile Include="dist\13.f448252671b2b826d818.js" />
+    <Compile Include="dist\14.7bf6bec6e698ff15ef7c.js" />
+    <Compile Include="dist\15.645db3e1f99a79e8a0e1.js" />
+    <Compile Include="dist\16.bf2c70f21b5f5a6b4f2a.js" />
+    <Compile Include="dist\17.7c4d226aae01e6d0575a.js" />
+    <Compile Include="dist\18.5112e33a5001258f29e3.js" />
+    <Compile Include="dist\19.a725eb9de3a0e253075f.js" />
+    <Compile Include="dist\20.2c68a8cec2de734ead47.js" />
+    <Compile Include="dist\21.3e9fdd7574eb3adb6f20.js" />
+    <Compile Include="dist\22.d29ebd5dbaaa049e4a1e.js" />
+    <Compile Include="dist\4.2ee82effcdb4d6473043.js" />
+    <Compile Include="dist\5.42776efb03202eb4f1a1.js" />
+    <Compile Include="dist\6.6c0d2b16a673ecbe4620.js" />
+    <Compile Include="dist\7.c96c68ca3277f9cfa751.js" />
+    <Compile Include="dist\8.b4d6f26cb51665d62d52.js" />
+    <Compile Include="dist\9.a5361fd50c3d970914a8.js" />
+    <Compile Include="dist\assets\js\allcustom.js" />
+    <Compile Include="dist\assets\js\bootstrap-touch-slider.js" />
+    <Compile Include="dist\assets\js\bootstrap.min.js" />
+    <Compile Include="dist\assets\js\Common-.js" />
+    <Compile Include="dist\assets\js\custom.js" />
+    <Compile Include="dist\assets\js\jquery-3.2.1.slim.min.js" />
+    <Compile Include="dist\assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Compile Include="dist\assets\js\jquery.min.js" />
+    <Compile Include="dist\assets\js\ninja-slider.js" />
+    <Compile Include="dist\assets\js\popper.min.js" />
+    <Compile Include="dist\assets\js\scrolling-nav.js" />
+    <Compile Include="dist\assets\js\thumbnail-slider.js" />
+    <Compile Include="dist\assets\js\touchswipe.min.js" />
+    <Compile Include="dist\main.0d8ffee899ccaf4a9f3d.js" />
+    <Compile Include="dist\polyfills.c6871e56cb80756a5498.js" />
+    <Compile Include="dist\runtime.a66764cf57ca712a2e0a.js" />
+    <Compile Include="dist\scripts.d1123fec04122f803029.js" />
+    <Compile Include="e2e\protractor.conf.js" />
+    <Content Include="src\index.html" />
+    <Content Include="src\styles.css" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\tsconfig.app.json" />
+    <Content Include="src\tsconfig.spec.json" />
+    <Content Include="src\tslint.json" />
+    <TypeScriptCompile Include="src\app\aboutus\aboutus-routing.ts" />
+    <TypeScriptCompile Include="src\app\aboutus\aboutus.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\aboutus\aboutus.component.ts" />
+    <TypeScriptCompile Include="src\app\aboutus\aboutus.module.ts" />
+    <TypeScriptCompile Include="src\app\blogdetails\blogdetails-routing.ts" />
+    <TypeScriptCompile Include="src\app\blogdetails\blogdetails.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\blogdetails\blogdetails.component.ts" />
+    <TypeScriptCompile Include="src\app\blogdetails\blogdetails.module.ts" />
+    <TypeScriptCompile Include="src\app\blog\blog-routing.ts" />
+    <TypeScriptCompile Include="src\app\blog\blog.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\blog\blog.component.ts" />
+    <TypeScriptCompile Include="src\app\blog\blog.module.ts" />
+    <TypeScriptCompile Include="src\app\categories\categories-routing.ts" />
+    <TypeScriptCompile Include="src\app\categories\categories.module.ts" />
+    <TypeScriptCompile Include="src\app\categorytwo\categorytwo-routing.ts" />
+    <TypeScriptCompile Include="src\app\categorytwo\categorytwo.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\categorytwo\categorytwo.component.ts" />
+    <TypeScriptCompile Include="src\app\categorytwo\categorytwo.module.ts" />
+    <TypeScriptCompile Include="src\app\checkout\checkout-routing.ts" />
+    <TypeScriptCompile Include="src\app\checkout\checkout.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\checkout\checkout.component.ts" />
+    <TypeScriptCompile Include="src\app\checkout\checkout.module.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact-routing.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact.component.ts" />
+    <TypeScriptCompile Include="src\app\contact\contact.module.ts" />
+    <TypeScriptCompile Include="src\app\customerprivatearea\customerprivatearea.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\customerprivatearea\customerprivatearea.component.ts" />
+    <TypeScriptCompile Include="src\app\error\error-routing.ts" />
+    <TypeScriptCompile Include="src\app\error\error.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\error\error.component.ts" />
+    <TypeScriptCompile Include="src\app\error\error.module.ts" />
+    <TypeScriptCompile Include="src\app\faq\faq-routing.ts" />
+    <TypeScriptCompile Include="src\app\faq\faq.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\faq\faq.component.ts" />
+    <TypeScriptCompile Include="src\app\faq\faq.module.ts" />
+    <TypeScriptCompile Include="src\app\forgotpassword\forgotpassword-routing.ts" />
+    <TypeScriptCompile Include="src\app\forgotpassword\forgotpassword.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\forgotpassword\forgotpassword.component.ts" />
+    <TypeScriptCompile Include="src\app\forgotpassword\forgotpassword.module.ts" />
+    <TypeScriptCompile Include="src\app\myaccount\myaccount.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\myaccount\myaccount.component.ts" />
+    <TypeScriptCompile Include="src\app\myaddress\myaddress.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\myaddress\myaddress.component.ts" />
+    <TypeScriptCompile Include="src\app\mybillingaddress\mybillingaddress.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\mybillingaddress\mybillingaddress.component.ts" />
+    <TypeScriptCompile Include="src\app\mypersonalinformation\mypersonalinformation.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\mypersonalinformation\mypersonalinformation.component.ts" />
+    <TypeScriptCompile Include="src\app\orderdetails\orderdetails.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\orderdetails\orderdetails.component.ts" />
+    <TypeScriptCompile Include="src\app\orders\orders.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\orders\orders.component.ts" />
+    <TypeScriptCompile Include="src\app\pageproductlist\pageproductlist.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\pageproductlist\pageproductlist.component.ts" />
+    <TypeScriptCompile Include="src\app\privacypolicy\privacypolicy-routing.ts" />
+    <TypeScriptCompile Include="src\app\privacypolicy\privacypolicy.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\privacypolicy\privacypolicy.component.ts" />
+    <TypeScriptCompile Include="src\app\privacypolicy\privacypolicy.module.ts" />
+    <TypeScriptCompile Include="src\app\producer\producer-routing.ts" />
+    <TypeScriptCompile Include="src\app\producer\producer.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\producer\producer.component.ts" />
+    <TypeScriptCompile Include="src\app\producer\producer.module.ts" />
+    <TypeScriptCompile Include="src\app\searchresult\searchresult-routing.ts" />
+    <TypeScriptCompile Include="src\app\searchresult\searchresult.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\searchresult\searchresult.component.ts" />
+    <TypeScriptCompile Include="src\app\searchresult\searchresult.module.ts" />
+    <TypeScriptCompile Include="src\app\services\animation.ts" />
+    <TypeScriptCompile Include="src\app\services\Infobemservice.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shoppingcart\shoppingcart-routing.ts" />
+    <TypeScriptCompile Include="src\app\shoppingcart\shoppingcart.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\shoppingcart\shoppingcart.component.ts" />
+    <TypeScriptCompile Include="src\app\shoppingcart\shoppingcart.module.ts" />
+    <TypeScriptCompile Include="src\app\singin\singin-routing.ts" />
+    <TypeScriptCompile Include="src\app\singin\singin.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\singin\singin.component.ts" />
+    <TypeScriptCompile Include="src\app\singin\singin.module.ts" />
+    <TypeScriptCompile Include="src\app\singup\singup-routing.ts" />
+    <TypeScriptCompile Include="src\app\singup\singup.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\singup\singup.component.ts" />
+    <TypeScriptCompile Include="src\app\singup\singup.module.ts" />
+    <TypeScriptCompile Include="src\app\terms\terms-routing.ts" />
+    <TypeScriptCompile Include="src\app\terms\terms.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\terms\terms.component.ts" />
+    <TypeScriptCompile Include="src\app\terms\terms.module.ts" />
+    <TypeScriptCompile Include="src\app\thankyou\thankyou-routing.ts" />
+    <TypeScriptCompile Include="src\app\thankyou\thankyou.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\thankyou\thankyou.component.ts" />
+    <TypeScriptCompile Include="src\app\thankyou\thankyou.module.ts" />
+    <TypeScriptCompile Include="src\app\_helpers\must-match.validator.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+    <Compile Include="src\assets\js\allcustom.js" />
+    <Compile Include="src\assets\js\Common-.js" />
+    <Compile Include="src\assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Compile Include="src\assets\js\touchswipe.min.js" />
+    <Compile Include="src\karma.conf.js" />
+    <TypeScriptCompile Include="e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="e2e\src\app.po.ts" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\app.component.css" />
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+    <Content Include="src\app\categories\categories.component.html" />
+    <Content Include="src\app\categories\categories.component.css" />
+    <TypeScriptCompile Include="src\app\categories\categories.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\categories\categories.component.ts" />
+    <Content Include="src\app\footer\footer.component.html" />
+    <Content Include="src\app\footer\footer.component.css" />
+    <TypeScriptCompile Include="src\app\footer\footer.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\footer\footer.component.ts" />
+    <Content Include="src\app\headder\headder.component.html" />
+    <Content Include="src\app\headder\headder.component.css" />
+    <TypeScriptCompile Include="src\app\headder\headder.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\headder\headder.component.ts" />
+    <Content Include="src\app\home\home.component.html" />
+    <Content Include="src\app\home\home.component.css" />
+    <TypeScriptCompile Include="src\app\home\home.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\home\home.component.ts" />
+    <Content Include="src\app\product\product.component.html" />
+    <Content Include="src\app\product\product.component.css" />
+    <TypeScriptCompile Include="src\app\product\product-routing.ts" />
+    <TypeScriptCompile Include="src\app\product\product.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\product\product.component.ts" />
+    <TypeScriptCompile Include="src\app\product\product.module.ts" />
+    <Content Include="src\assets\css\bootstrap.min.css" />
+    <Content Include="src\assets\css\font-awesome.css" />
+    <Content Include="src\assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="src\assets\css\media.css" />
+    <Content Include="src\assets\css\product-slider-1.css" />
+    <Content Include="src\assets\css\style.css" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.svg" />
+    <Compile Include="src\assets\js\bootstrap-touch-slider.js" />
+    <Compile Include="src\assets\js\bootstrap.min.js" />
+    <Compile Include="src\assets\js\custom.js" />
+    <Compile Include="src\assets\js\jquery-3.2.1.slim.min.js" />
+    <Compile Include="src\assets\js\jquery.min.js" />
+    <Compile Include="src\assets\js\ninja-slider.js" />
+    <Compile Include="src\assets\js\popper.min.js" />
+    <Compile Include="src\assets\js\scrolling-nav.js" />
+    <Compile Include="src\assets\js\thumbnail-slider.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\" />
+    <Folder Include=".vs\ang7Proj\" />
+    <Folder Include=".vs\ang7Proj\v15\" />
+    <Folder Include=".vs\config\" />
+    <Folder Include=".vs\Infobem\" />
+    <Folder Include=".vs\Infobem\v14\" />
+    <Folder Include=".vs\Infobem\v15\" />
+    <Folder Include="bin\" />
+    <Folder Include="dist" />
+    <Folder Include="dist\assets\" />
+    <Folder Include="dist\assets\css\" />
+    <Folder Include="dist\assets\fonts\" />
+    <Folder Include="dist\assets\img\" />
+    <Folder Include="dist\assets\img\blog\" />
+    <Folder Include="dist\assets\img\New folder\" />
+    <Folder Include="dist\assets\img\old\" />
+    <Folder Include="dist\assets\img\product-slider\" />
+    <Folder Include="dist\assets\js\" />
+    <Folder Include="e2e" />
+    <Folder Include="e2e\src" />
+    <Folder Include="Infobem" />
+    <Folder Include="Infobem\Infobem" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Release\" />
+    <Folder Include="src" />
+    <Folder Include="src\app" />
+    <Folder Include="src\app\aboutus\" />
+    <Folder Include="src\app\blogdetails\" />
+    <Folder Include="src\app\blog\" />
+    <Folder Include="src\app\categories" />
+    <Folder Include="src\app\categorytwo\" />
+    <Folder Include="src\app\checkout\" />
+    <Folder Include="src\app\contact\" />
+    <Folder Include="src\app\customerprivatearea\" />
+    <Folder Include="src\app\error\" />
+    <Folder Include="src\app\faq\" />
+    <Folder Include="src\app\footer" />
+    <Folder Include="src\app\forgotpassword\" />
+    <Folder Include="src\app\headder" />
+    <Folder Include="src\app\home" />
+    <Folder Include="src\app\myaccount\" />
+    <Folder Include="src\app\myaddress\" />
+    <Folder Include="src\app\mybillingaddress\" />
+    <Folder Include="src\app\mypersonalinformation\" />
+    <Folder Include="src\app\orderdetails\" />
+    <Folder Include="src\app\orders\" />
+    <Folder Include="src\app\pageproductlist\" />
+    <Folder Include="src\app\privacypolicy\" />
+    <Folder Include="src\app\producer\" />
+    <Folder Include="src\app\searchresult\" />
+    <Folder Include="src\app\services\" />
+    <Folder Include="src\app\product" />
+    <Folder Include="src\app\shoppingcart\" />
+    <Folder Include="src\app\singin\" />
+    <Folder Include="src\app\singup\" />
+    <Folder Include="src\app\terms\" />
+    <Folder Include="src\app\thankyou\" />
+    <Folder Include="src\app\_helpers\" />
+    <Folder Include="src\assets" />
+    <Folder Include="src\assets\css" />
+    <Folder Include="src\assets\fonts" />
+    <Folder Include="src\assets\img\" />
+    <Folder Include="src\assets\img\account\" />
+    <Folder Include="src\assets\img\blog\" />
+    <Folder Include="src\assets\img\New folder\" />
+    <Folder Include="src\assets\img\old\" />
+    <Folder Include="src\assets\img\product-slider\" />
+    <Folder Include="src\assets\js" />
+    <Folder Include="src\environments" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

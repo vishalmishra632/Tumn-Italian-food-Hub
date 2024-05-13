@@ -1,0 +1,143 @@
+<section class="site_breadcurm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/myaccount']">My Account </a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Address</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contactpage ads-col">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="myaccount-title">
+          <h1>My Addresses:</h1>
+          <p>
+            Slect your shipping an dbilling addresses. There will be your default addresses when you place your order. You may also add more addresse, which can be used for sending
+            giftsor receiving orders are your workplace.
+          </p>
+        </div>
+
+        <div class="myaccount-title">
+          <h1>Your Addresses are listed below:</h1>
+          <p>Don’t forget to keep them uptodate!</p>
+        </div>
+
+        <div class="alladdress_page">
+          <div class="row">
+            <div class="col-lg-4">
+
+              <div class="add-details">
+
+                <h2>Default Address</h2>
+
+                <p>
+                  GIorgia Fois<br>
+                  Eurosaf Sri<br>
+                  VIa dei Sabelli 75<br>
+                  c/o Negozio di alimentri<br>
+                  Itely<br>
+                  ROma<br>
+                  00185 Roma<br>
+                  3358746952
+                </p>
+
+                <div class="adds_btn">
+                  <a [routerLink]="['/mybillingaddress']" class="btn updatebtn">
+                    Update <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="btn deletebtn">Delete <i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="add-details">
+
+                <h2>Default Address</h2>
+
+                <p>
+                  GIorgia Fois<br>
+                  Eurosaf Sri<br>
+                  VIa dei Sabelli 75<br>
+                  c/o Negozio di alimentri<br>
+                  Itely<br>
+                  ROma<br>
+                  00185 Roma<br>
+                  3358746952
+                </p>
+
+                <div class="adds_btn">
+                  <a [routerLink]="['/mybillingaddress']" class="btn updatebtn">
+                    Update <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="btn deletebtn">Delete <i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="add-details">
+
+                <h2>Default Address</h2>
+
+                <p>
+                  GIorgia Fois<br>
+                  Eurosaf Sri<br>
+                  VIa dei Sabelli 75<br>
+                  c/o Negozio di alimentri<br>
+                  Itely<br>
+                  ROma<br>
+                  00185 Roma<br>
+                  3358746952
+                </p>
+
+                <div class="adds_btn">
+                  <a [routerLink]="['/mybillingaddress']" class="btn updatebtn">
+                    Update <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="btn deletebtn">Delete <i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="addnew-col">
+          <a [routerLink]="['/myaccount']" class="btn updatebtn"><i class="fa fa-caret-left" aria-hidden="true"></i> Go Back to My Account</a>
+          <a routerLink="" class="btn orange2btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Home</a>
+
+          <a [routerLink]="['/mybillingaddress']" class="btn orange2btn">
+            Add a New Address <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </a>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>

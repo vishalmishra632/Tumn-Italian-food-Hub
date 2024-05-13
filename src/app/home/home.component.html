@@ -1,0 +1,788 @@
+
+<section class="main_slider">
+  <div class="m_sliderpart">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-8 col-lg-7 col-md-6 slidegaplft">
+          <div class="slider_main">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../assets/img/main_slide1.jpg"  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem Ipsum</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting
+                    </p>
+                    <a href="JavaScript:Void(0);" class="btn redbtn">Explore</a>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/img/main_slide1.jpg"  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem Ipsum</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting
+                    </p>
+                    <a href="JavaScript:Void(0);" class="btn redbtn">Explore</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/img/main_slide1.jpg"  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Lorem Ipsum</h5>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting
+                    </p>
+                    <a href="JavaScript:Void(0);" class="btn redbtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 slidegaprght">
+          <div class="m_right">
+            <!--<div class="mslideimg"><img src="img/mainslide_rightimg.jpg"></div>-->
+            <div class="maslidetxt">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem Ipsum is simply dummy</p>
+              <a href="JavaScript:Void(0);">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div><!--row-->
+    </div><!--container-fluid-->
+  </div><!--m_sliderpart-->
+</section>
+<section class="hm_categories">
+  <div class="container-fluid">
+    <div class="hm_title">
+      <h4>Categories</h4>
+      <small>What differs us from other</small>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 catslider" *ngIf="!infobemservice.isDirectionRtl">
+        <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="carouselTileItems$ | async">
+          <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+            <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+            <div class="hoverlay tile" [style.background]="'url('+item+')'">
+              <!--<h1>{{i + 1}}</h1>-->
+              <a href="JavaScript:Void(0);" class="category-style"><strong class="heading">Lorem Impsum </strong> <br/> Lorem ipsum is just a dummy	</a>
+            </div>
+            <!-- <div class="cat_des">
+           <p><a href="JavaScript:Void(0);">Lorem ipsum is just a dummy	</a></p>
+
+         </div>-->
+          </ngu-tile>
+
+          <button NguCarouselPrev class="slidernavbtns leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+          <button NguCarouselNext class="slidernavbtns rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+
+          <ul class="myPoint" NguCarouselPoint>
+            <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint" (click)="myCarousel.moveTo(i)"></li>
+          </ul>
+        </ngu-carousel>
+      </div>
+      <div class="col-md-12 catslider" *ngIf="infobemservice.isDirectionRtl">
+        <ngu-carousel #myCarousel [inputs]="carouselTileConfigRtl" [dataSource]="carouselTileItems$ | async">
+          <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+            <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+            <div class="hoverlay tile" [style.background]="'url('+item+')'">
+              <!--<h1>{{i + 1}}</h1>-->
+              <a href="JavaScript:Void(0);" class="category-style"><strong class="heading">Lorem Impsum </strong> <br/> Lorem ipsum is just a dummy	</a>
+            </div>
+            <!-- <div class="cat_des">
+           <p><a href="JavaScript:Void(0);">Lorem ipsum is just a dummy	</a></p>
+
+         </div>-->
+          </ngu-tile>
+
+          <button NguCarouselPrev class="slidernavbtns leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+          <button NguCarouselNext class="slidernavbtns rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+
+          <ul class="myPoint" NguCarouselPoint>
+            <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint" (click)="myCarousel.moveTo(i)"></li>
+          </ul>
+        </ngu-carousel>
+      </div>
+    </div><!--row-->
+
+  </div><!--container-fluid-->
+</section>
+<section class="our_producers">
+  <div class="container-fluid">
+    <div class="hm_title">
+      <h4> Our Producers </h4>
+      <small> Lorem Ipsum is simply dummy text of the printing  </small>
+    </div>
+    <div class="row">
+
+      <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="op-box">
+          <img src="../../assets/img/p1.jpg" class="img-responsive" alt="image" />
+          <div class="overlay">
+            <a href="javascript:void(0)">VID-TUT-PRODUCT</a>
+          </div>
+          <div class="textlines">
+            <span class="bold">Agrifood Toscana</span>
+            <span class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          </div>
+          <div class="discount-tags"><span>-10%</span></div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="op-box">
+          <img src="../../assets/img/p2.jpg" class="img-responsive" alt="image" />
+          <div class="overlay">
+            <a href="javascript:void(0)">VID-TUT-PRODUCT</a>
+          </div>
+          <div class="textlines">
+            <span class="bold">Birrifico del vulture</span>
+            <span class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          </div>
+          <div class="discount-tags"><span>-12%</span></div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="op-box">
+          <img src="../../assets/img/p3.jpg" class="img-responsive" alt="image" />
+          <div class="overlay">
+            <a href="javascript:void(0)">VID-TUT-PRODUCT</a>
+          </div>
+          <div class="textlines">
+            <span class="bold"> La malvizza </span>
+            <span class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          </div>
+          <div class="discount-tags"></div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="op-box">
+          <img src="../../assets/img/p4.jpg" class="img-responsive" alt="image" />
+          <div class="overlay">
+            <a href="javascript:void(0)">VID-TUT-PRODUCT</a>
+          </div>
+          <div class="textlines">
+            <span class="bold"> il giuggiolo </span>
+            <span class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          </div>
+          <div class="discount-tags"><span>-35%</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="usee_more"><a href="JavaScript:Void(0);">See More</a></div>
+      </div>
+    </div>
+
+
+  </div>
+
+</section><!-- producer-section-->
+<section class="featues-col">
+  <div class="container-fluid">
+    <!-- <div class="hm_title">
+         <h4> Featured Products Best Sellers </h4>
+         <small> Lorem Ipsum is simply dummy text of the printing  </small>
+       </div>-->
+    <div class="row">
+      <div class="col-md-12 features-slider">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="feature-tab" data-toggle="tab" href="#feature" role="tab" aria-controls="home" aria-selected="true">Featured Products</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" id="best-tab" data-toggle="tab" href="#best" role="tab" aria-controls="profile" aria-selected="false">Best Sellers</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="feature" role="tabpanel" aria-labelledby="feature-tab" *ngIf="!infobemservice.isDirectionRtl">
+            <ngu-carousel #myProductCarousel [inputs]="carouselProductConfig" [dataSource]="carouselProductItems$ | async">
+              <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+                <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+                <div class="hoverlay tile pos-rel" [style.background]="'url('+item+')'">
+                  <!--<h1>{{i + 1}}</h1>-->
+                  <div class="roll-over-effect">
+                    <ul>
+                      <li class="qv"><a href="javascript:void(0);" data-toggle="modal" data-target="#quickview">Quick View</a> </li>
+                      <li class="sh"><a href="javascript:void(0)"><i class="fa fa-share-alt"></i></a></li>
+                      <li class="fav"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                      <li class="cart"><a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                   </div>
+                  <div class="tag-label offer"> <p>Free <br /> 3 Days!</p> </div>
+                  <div class="tag-label Info"> <p>Low <br /> Stock!</p> </div>
+                </div>
+
+                <p><a href="javascript:void(0)">Rome and Lazio</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas congue enim nec lacinia. Sed rutrum vestibulum quam sit amet pulvinar.</p>
+                <div class="blog-rating style-a">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                <div class="blog-price">
+                  <p> was: <del>€ 12.00</del> now: € 9.99</p>
+                </div>
+                <div class="blog-cart">
+                  <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+                </div>
+              </ngu-tile>
+
+              <button NguCarouselPrev class="slidernavbtns leftRs" [style.opacity]="myProductCarousel.isFirst ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+              <button NguCarouselNext class="slidernavbtns rightRs" [style.opacity]="myProductCarousel.isLast ? 0.5:1"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+              <ul class="myPoint" NguCarouselPoint>
+                <li *ngFor="let i of myProductCarousel.pointNumbers; let i = index" [class.active]="i==myProductCarousel.activePoint" (click)="myProductCarousel.moveTo(i)"></li>
+              </ul>
+            </ngu-carousel>
+          </div>
+          <div class="tab-pane fade show active" id="feature" role="tabpanel" aria-labelledby="feature-tab" *ngIf="infobemservice.isDirectionRtl">
+            <ngu-carousel #myProductCarousel [inputs]="carouselProductConfigRtl" [dataSource]="carouselProductItems$ | async">
+              <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+                <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+                <div class="hoverlay tile pos-rel" [style.background]="'url('+item+')'">
+                  <!--<h1>{{i + 1}}</h1>-->
+                  <div class="roll-over-effect">  <ul>
+                      <li class="qv"><a href="javascript:void(0)">Quick View</a></li>
+                      <li class="sh"><a href="javascript:void(0)"><i class="fa fa-share-alt"></i></a></li>
+                      <li class="fav"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                      <li class="cart"><a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <!--<p><a href="#" class="qv">Quick View</a> <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a></p>--> </div>
+                  <div class="tag-label offer"> <p>Free <br /> 3 Days!</p> </div>
+                  <div class="tag-label Info"> <p>Low <br /> Stock!</p> </div>
+                </div>
+
+                <p><a href="#">Rome and Lazio</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas congue enim nec lacinia. Sed rutrum vestibulum quam sit amet pulvinar.</p>
+                <div class="blog-rating style-a">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                <div class="blog-price">
+                    <p> was: <del>€ 12.00</del> now: € 9.99</p>
+                </div>
+                <div class="blog-cart">
+                  <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+                </div>
+              </ngu-tile>
+
+              <button NguCarouselPrev class="slidernavbtns leftRs" [style.opacity]="myProductCarousel.isFirst ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+              <button NguCarouselNext class="slidernavbtns rightRs" [style.opacity]="myProductCarousel.isLast ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+
+              <ul class="myPoint" NguCarouselPoint>
+                <li *ngFor="let i of myProductCarousel.pointNumbers; let i = index" [class.active]="i==myProductCarousel.activePoint" (click)="myProductCarousel.moveTo(i)"></li>
+              </ul>
+            </ngu-carousel>
+          </div>
+          <div class="tab-pane fade" id="best" role="tabpanel" aria-labelledby="best-tab" *ngIf="!infobemservice.isDirectionRtl">
+            <ngu-carousel #myProductCarousel [inputs]="carouselBestProductConfig" [dataSource]="carouselBestProductItems$ | async">
+              <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+                <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+                <div class="hoverlay tile pos-rel" [style.background]="'url('+item+')'">
+                  <!--<h1>{{i + 1}}</h1>-->
+                  <div class="roll-over-effect">  <ul>
+                      <li class="qv"><a href="javascript:void(0)">Quick View</a></li>
+                      <li class="sh"><a href="javascript:void(0)"><i class="fa fa-share-alt"></i></a></li>
+                      <li class="fav"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                      <li class="cart"><a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul> </div>
+                  <div class="tag-label offer"> <p>Free <br /> 3 Days!</p> </div>
+                  <div class="tag-label Info"> <p>Low <br /> Stock!</p> </div>
+                </div>
+
+                <p><a href="javascript:void(0)">Rome and Lazio</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas congue enim nec lacinia. Sed rutrum vestibulum quam sit amet pulvinar.</p>
+                <div class="blog-rating style-a">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                <div class="blog-price">
+                    <p> was: <del>€ 12.00</del> now: € 9.99</p>
+                </div>
+                <div class="blog-cart">
+                  <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+                </div>
+              </ngu-tile>
+
+              <button NguCarouselPrev class="slidernavbtns leftRs" [style.opacity]="myProductCarousel.isFirst ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+              <button NguCarouselNext class="slidernavbtns rightRs" [style.opacity]="myProductCarousel.isLast ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+
+              <ul class="myPoint" NguCarouselPoint>
+                <li *ngFor="let i of myProductCarousel.pointNumbers; let i = index" [class.active]="i==myProductCarousel.activePoint" (click)="myProductCarousel.moveTo(i)"></li>
+              </ul>
+            </ngu-carousel>
+          </div>
+          <div class="tab-pane fade" id="best" role="tabpanel" aria-labelledby="best-tab" *ngIf="infobemservice.isDirectionRtl">
+            <ngu-carousel #myProductCarousel [inputs]="carouselBestProductConfigRtl" [dataSource]="carouselBestProductItems$ | async">
+              <ngu-tile *nguCarouselDef="let item; let i = index; let ani = animate">
+                <!-- [@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations -->
+                <div class="hoverlay tile pos-rel" [style.background]="'url('+item+')'">
+                  <!--<h1>{{i + 1}}</h1>-->
+                  <div class="roll-over-effect"> <ul>
+                      <li class="qv"><a href="javascript:void(0)">Quick View</a></li>
+                      <li class="sh"><a href="javascript:void(0)"><i class="fa fa-share-alt"></i></a></li>
+                      <li class="fav"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+                      <li class="cart"><a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul> </div>
+                  <div class="tag-label offer"> <p>Free <br /> 3 Days!</p> </div>
+                  <div class="tag-label Info"> <p>Low <br /> Stock!</p> </div>
+                </div>
+
+                <p><a href="javascript:void(0)">Rome and Lazio</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas congue enim nec lacinia. Sed rutrum vestibulum quam sit amet pulvinar.</p>
+                <div class="blog-rating style-a">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>  
+                <div class="blog-price">
+                    <p> was: <del>€ 12.00</del> now: € 9.99</p>
+                </div>
+                <div class="blog-cart">
+                  <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+                </div>
+              </ngu-tile>
+
+              <button NguCarouselPrev class="slidernavbtns leftRs" [style.opacity]="myProductCarousel.isFirst ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+              <button NguCarouselNext class="slidernavbtns rightRs" [style.opacity]="myProductCarousel.isLast ? 0.5:1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+
+              <ul class="myPoint" NguCarouselPoint>
+                <li *ngFor="let i of myProductCarousel.pointNumbers; let i = index" [class.active]="i==myProductCarousel.activePoint" (click)="myProductCarousel.moveTo(i)"></li>
+              </ul>
+            </ngu-carousel>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pro_categories">
+  <div class="container-fluid">
+    <div class="hm_title">
+      <h4>Producer of the week</h4>
+      <small>What differs us from other</small>
+    </div>
+    <div class="pow-bg">
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+          <div class="proslider">
+            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../assets/img/main_slide1.jpg"  />
+
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/img/main_slide1.jpg" />
+
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/img/main_slide1.jpg"  />
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+          <div class="proslider-content">
+
+            <div class="proslidetxt">
+              <h4>Lorem Ipsum</h4>
+              <p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio. Quisque interdum massa quis ex commodo facilisis. Aliquam vitae felis a massa ultrices tincidunt Aliquam aliquam iaculis risus sed enim efficitur sit amet.Maecenas nec dignissim lacus. Donec tristique nibh sed nibh ornare convallis.</p>
+
+            </div>
+
+            <div class="produ-des">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="pro-content">
+                    <a href="javascript:void(0)"><i class="fa fa-heart-o fav-icon"></i></a>
+                    <div class="pro-content-img">
+                      <img src="../../assets/img/produ1.png">
+                    </div>
+                    <div class="pro-content-text">
+                      <h2>tomin del Barba 300g</h2>
+                      <p>$100.00</p>
+                      <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="pro-content">
+                      <a href="javascript:void(0)"><i class="fa fa-heart-o fav-icon"></i></a>
+                    <div class="pro-content-img">
+                      <img src="../../assets/img/produ1.png">
+                    </div>
+                    <div class="pro-content-text">
+                      <h2>tomin del Barba 300g</h2>
+                      <p>$100.00</p>
+                      <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="pro-content">
+                      <a href="javascript:void(0)"><i class="fa fa-heart-o fav-icon"></i></a>
+                    <div class="pro-content-img">
+                      <img src="../../assets/img/produ1.png">
+                    </div>
+                    <div class="pro-content-text">
+                      <h2>tomin del Barba 300g</h2>
+                      <p>$100.00</p>
+                      <a class="btn explorebtn" href="javascript:void(0)">Add to Cart</a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="container-fluid">
+      <div class="text-right">
+        <a href="#" class="pow-viewmore-btn">View More <i class="fa fa-long-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div><!--row-->
+    </div>
+  </div><!--container-fluid-->
+</section>
+
+
+<section class="hm_benefits">
+  <div class="container-fluid">
+    <div class="hm_title">
+      <h4>benefits</h4>
+      <small>lorem Ipsum is just a dummy text</small>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <div class="benfit_info">
+          <div class="benefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/benefit1.png" />	</a>
+          </div>
+          <div class="benfit_des">
+            <h4>lorem Ipsum</h4>
+            <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-3-->
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <div class="benfit_info">
+          <div class="benefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/benefit2.png" />	</a>
+          </div>
+          <div class="benfit_des">
+            <h4>lorem Ipsum</h4>
+            <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-3-->
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <div class="benfit_info">
+          <div class="benefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/benefit3.png" />	</a>
+          </div>
+          <div class="benfit_des">
+            <h4>lorem Ipsum</h4>
+            <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-3-->
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <div class="benfit_info">
+          <div class="benefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/benefit4.png" />	</a>
+          </div>
+          <div class="benfit_des">
+            <h4>lorem Ipsum</h4>
+            <p> consectetur adipiscing elit. Maecenas quis aliquet elit. consectetur adipiscing elit.</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-3-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="cbenfit_info">
+          <div class="cbenefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/client1.png" />	</a>
+          </div>
+          <div class="cbenfit_des">
+            <h4>Customer?</h4>
+            <p>Enter the Market</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-4-->
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="cbenfit_info">
+          <div class="cbenefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/client2.png" />	</a>
+          </div>
+          <div class="cbenfit_des producr">
+            <h4>Producer?</h4>
+            <p>Discover</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-4-->
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="cbenfit_info">
+          <div class="cbenefit_img">
+            <a href="JavaScript:Void(0);"><img src="../../assets/img/client3.png" />	</a>
+          </div>
+          <div class="cbenfit_des restaurta">
+            <h4>Restaurateur?</h4>
+            <p>Discover</p>
+          </div>
+        </div><!--benfit_info-->
+      </div><!--col-xl-4-->
+    </div><!--row-->
+  </div><!--container-fluid-->
+</section>
+
+<section class="blog_categories">
+  <div class="container-fluid mycss">
+    <div class="hm_title">
+      <h4>Blog Categories</h4>
+      <small>What differs us from other</small>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-12">
+        <div class="blogcat_info">
+          <div class="blogcat_img">
+            <a [routerLink]="['/blogdetails']"><img src="../../assets/img/blog1.jpg">	</a>
+          </div>
+          <div class="blogcat_des">
+            <a routerLink="/blogdetails" class="text-upper-a">Piemonte and Valle d'Aosta</a>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p> Aliquam vitae felis a massa ultrices tincidunt Aliquam aliquam iaculis risus sed enim efficitur sit amet.Maecenas nec dignissim lacus. Donec tristique nibh sed nibh ornare convallis.  </p>
+            <a [routerLink]="['/blogdetails']" class="more-btn">More</a>
+          </div>
+
+        </div><!--rcat_info-->
+      </div><!--col-xl-4-->
+      <div class="col-xl-4 col-lg-4 col-md-12">
+        <div class="blogcat_info">
+          <div class="blogcat_img">
+            <a [routerLink]="['/blogdetails']"><img src="../../assets/img/blog2.jpg">	</a>
+          </div>
+          <div class="blogcat_des">
+            <a [routerLink]="['/blogdetails']" class="text-upper-a">Liguria</a>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p> Aliquam vitae felis a massa ultrices tincidunt Aliquam aliquam iaculis risus sed enim efficitur sit amet.Maecenas nec dignissim lacus. Donec tristique nibh sed nibh ornare convallis.  </p>
+            <a [routerLink]="['/blogdetails']" class="more-btn">More</a>
+
+          </div>
+        </div><!--rcat_info-->
+      </div><!--col-xl-4-->
+      <div class="col-xl-4 col-lg-4 col-md-12">
+        <div class="blogcat_info">
+          <div class="blogcat_img">
+            <a [routerLink]="['/blogdetails']" class="text-upper-a"><img src="../../assets/img/blog3.jpg">	</a>
+          </div>
+          <div class="blogcat_des">
+            <a [routerLink]="['/blogdetails']">Lombardy and the Lakes</a>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p> Aliquam vitae felis a massa ultrices tincidunt Aliquam aliquam iaculis risus sed enim efficitur sit amet.Maecenas nec dignissim lacus. Donec tristique nibh sed nibh ornare convallis.  </p>
+            <a [routerLink]="['/blogdetails']" class="more-btn">More</a>
+          </div>
+        </div><!--rcat_info-->
+        <!-- <div class="blogcat_info">
+           <div class="blogcat_img">
+             <a href="JavaScript:Void(0);"><img src="../../assets/img/rcatimg6.jpg" />	</a>
+           </div>
+           <div class="blogcat_des">
+             <a href="JavaScript:Void(0);">Lorem ipsum dolor sit</a>
+             <p> consectetur adipiscing elit. Maecenas quis aliquet elit.</p>
+             <div class="blog_userimg"><img src="../../assets/img/client_says3.jpg" /></div>
+           </div>
+           <div class="blog_seemore"><a href="JavaScript:Void(0);">See More</a></div>
+         </div>rcat_info-->
+      </div><!--col-xl-4-->
+    </div><!--row-->
+    <div class="usee_more"><a href="JavaScript:Void(0);">View All</a></div>
+  </div><!--container-fluid-->
+</section>
+
+<section class="hm_clientsays">
+  <div class="container-fluid">
+    <div class="hm_title">
+      <h4>Clients</h4>
+      <small>says about us</small>
+    </div>
+    <div class="client_slider">
+      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators cuserpics">
+          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"><img src="../../assets/img/client_says3.jpg" /></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="1"><img src="../../assets/img/client_says1.jpg" /></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="2"><img src="../../assets/img/client_says2.jpg" /></li>
+        </ol>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="c_quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.. </p>
+              <small>By</small>
+              <h5>George Danial</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="c_quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.. </p>
+              <small>By</small>
+              <h5>George Danial</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="c_quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.. </p>
+              <small>By</small>
+              <h5>George Danial</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div><!--container-fluid-->
+</section>
+<!--sddfjk-->
+
+<!-- quick-view Modal -->
+<div class="qvpopup modal fade" id="quickview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+       
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="product-image">
+                  <div class="ptag"> <p>Lorem </p> </div>
+                  <img class="img-fluid" src="../../assets/img/modal-image.png" alt="image">
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+               <div class="product-info">
+                 <h1 class="ptitle">Donec varius et nisl et varius. Vivamus eu sagittis libero. Aliquam et fermentum velit. </h1>
+                 <p class="pcodes"><span>Code:123456</span><span>Lorem Impsum text</span></p>
+                 <div class="price-prod">
+                    <div class="prd-price">
+                        € 9.99
+                      </div>
+                      <div class="addi-info">
+                          <span class="ai-icon"><i class="fa fa-truck" aria-hidden="true"></i> </span>
+                          <span class="ai-text"><strong>Lorem ipsum dolor</strong> Donec varius consectetur adipiscing elit.</span>
+                      </div>
+                 </div>
+                 <div class="prod-buy">
+                    <div class="prd-q">
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                            <input class="quantity" min="0" name="quantity" placeholder="Quantity" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                          </div>
+                      
+                    </div>
+                    <div class="cart-col">
+                        <button type="button" class="btn cartbtn style-a">Add to Cart</button>
+                      </div>
+                 </div>
+                 <div class="prod-desc">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nibh quis diam accumsan lacinia. </p>
+                   <p>Donec varius et nisl et varius. Vivamus eu sagittis libero. </p>
+                 </div>
+               </div>
+              </div>
+          </div>
+           
+        </div>
+     
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,139 @@
+<section class="site_breadcurm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/myaccount']">My Account </a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Personal Information</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contactpage ads-col pers-info">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <form [formGroup]="PersonalForm" (ngSubmit)="onSubmit()">
+          <div class="add-details">
+            <h2>Default Personal Information <span>(*required Fields)</span></h2>
+
+            <div class="maincol">
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label"><span class="red-text">*</span>First Name</label>
+                <div class="col-sm-8">
+                  <input type="text" formControlName="firstName" class="form-control" placeholder="" value="Giorgio" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                  <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="maincol">
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label"><span class="red-text">*</span>Last Name</label>
+                <div class="col-sm-8">
+                  <input type="text" formControlName="lastName" class="form-control" placeholder="" value="Fois" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                  <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="maincol">
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label"><span class="red-text">*</span>Email Address</label>
+                <div class="col-sm-8">
+                  <input type="email" formControlName="email" class="form-control" placeholder="" value="Giorg.fois@gmail.com" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                    <div *ngIf="f.email.errors.pattern">Email is not valid</div>
+                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+            <div class="maincol">
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label"><span class="red-text">*</span> Current Password</label>
+                <div class="col-sm-8">
+                  <input type="password" formControlName="currentpassword" class="form-control" placeholder="" value="*******" [ngClass]="{ 'is-invalid': submitted && f.currentpassword.errors }" />
+                  <div *ngIf="submitted && f.currentpassword.errors" class="invalid-feedback">
+                    <div *ngIf="f.currentpassword.errors.required">Password is required</div>
+                    <div *ngIf="f.currentpassword.errors.minlength">Password must be at least 6 characters</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="maincol">
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label">New Password</label>
+                <div class="col-sm-8">
+                  <input type="password" formControlName="newpassword" class="form-control" placeholder="" [ngClass]="{ 'is-invalid': submitted && f.newpassword.errors }" />
+                  <div *ngIf="submitted && f.newpassword.errors" class="invalid-feedback">
+                    <div *ngIf="f.newpassword.errors.required">New Password is required</div>
+                    <div *ngIf="f.newpassword.errors.minlength">New Password must be at least 6 characters</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="maincol">
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label">Confirmation</label>
+                <div class="col-sm-8">
+                  <input type="text" formControlName="confirmation" class="form-control" placeholder="" [ngClass]="{ 'is-invalid': submitted && f.confirmation.errors }" />
+                  <div *ngIf="submitted && f.confirmation.errors" class="invalid-feedback">
+                    <div *ngIf="f.confirmation.errors.required">Confirmation is required</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <button  type="submit" class="btn orange2btn">Save <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+
+
+          </div>
+        </form>
+
+
+
+        <div class="addnew-col goback">
+
+
+          <a [routerLink]="['/myaccount']" class="btn updatebtn"><i class="fa fa-caret-left" aria-hidden="true"></i> Go Back to My Account</a>
+          <a routerLink="" class="btn orange2btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Home</a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>

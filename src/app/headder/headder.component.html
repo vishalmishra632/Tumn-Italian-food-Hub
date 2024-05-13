@@ -1,0 +1,900 @@
+
+
+<header class="hdr-desktop main_hdrshrk main_hdr">
+  <div class="container-fluid">
+    <div class="head_top">
+      <div class="row">
+
+        <div class="col-xl-2 col-lg-2 col-md-2  col-sm-2 ">
+          <div class="logo"><a routerLink=""><img src="../../assets/img/logo.jpg" class="img-fluid" /></a></div>
+        </div><!--col-xl-6-->
+
+        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10">
+          <div class="search_cartsec">
+            <div class="row">
+              <div class="col-xl-9 col-lg-9  col-md-6   col-sm-6">
+                <div class="search_fill">
+                  <p>Aliquam vitae felis a massa ultrices tincidunt Aliquam aliquam iaculis risus sed maximus.</p>
+                  <form>
+                    <input type="text" placeholder="Search Here...">
+                    <a href="javascript:void(0)" class="search-btn" [routerLink]="['/searchresult']">Search <i class="fa fa-search"></i></a>
+
+                  </form>
+                </div>
+
+              </div>
+              <div class="col-xl-3 col-lg-3  col-md-6   col-sm-6	">
+                <div class="currency_langmain">
+                  <div class="curancy_lang">
+                    <div class="ucdrop cldrop currency_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Currency
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/india.png"> INR</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-states.png"> USD</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/australia.png"> AUD</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-kingdom.png"> GBP</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/israel.png"> ILR</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/france.png"> EUR</a>
+                        </div>
+                      </div>
+                    </div><!--currency_drop-->
+
+                    <div class="ucdrop cldrop lang_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Language
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="javascript:void(0)">English</a>
+                          <a class="dropdown-item" href="javascript:void(0)">French</a>
+                        </div>
+                      </div>
+                    </div><!--lang_drop-->
+
+                  </div><!--curancy_lang-->
+                </div><!--currency_langmain-->
+                <div class="clearfix"></div>
+                <div class="hd_social">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="hdr-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="hdr-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="hdr-icon fa fa-google-plus" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                <div class="user_cartmain">
+                  <div class="user_cart">
+                    <!--<div class="ucdrop user_drop">
+                       <div class="dropdown show">
+                         <a class="btn btn-secondary dropdown-toggle"   role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span><img src="../../assets/img/user_icon.png" /></span>User
+                         </a>
+
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                           <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                           <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Account</a>
+                           <a class="dropdown-item" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
+                           <a class="dropdown-item" routerLink="/singin"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                         </div>
+                       </div>
+                     </div>
+                    <!--user_drop-->
+
+                    <div class="signin-top">
+                      <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> SignIn</a>
+                    </div>
+
+
+                    <div class="ucdrop cart_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" [routerLink]="['/shoppingcart']" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span><img src="../../assets/img/cart_icon.png" /></span>Cart
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <div class="dcart_item">
+                            <div class="cart_iteminfo">
+                              <div class="cart_itemimg">
+                                <a href="javascript:void(0)"><img src="../../assets/img/catimg1.jpg" />	</a>
+                              </div>
+                              <div class="cart_itemnm">
+                                <h4><a href="javascript:void(0)">Rome and Lazio</a></h4>
+                                <span class="c_itemp">$84.55</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="dropdown-item chkout" [routerLink]="['/checkout']">Checkout</a>
+                        </div>
+                      </div>
+                    </div><!--cart_drop-->
+
+                  </div><!--user_cart-->
+                </div><!--user_cartmain-->
+              </div>
+            </div><!--row-->
+          </div><!--search_cartsec-->
+        </div><!--col-xl-6-->
+
+      </div><!--row-->
+    </div><!--head_top-->
+  </div><!--container-fluid-->
+
+  <div class="menu_bg menu2">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" [routerLink]="['/categories']">Categories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Drink
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="javascript:void(0)">Soft Drink</a>
+                <a class="dropdown-item" href="javascript:void(0)">Lemon juice</a>
+                <a class="dropdown-item" href="javascript:void(0)">Mango Juice</a>
+                <a class="dropdown-item" href="javascript:void(0)">Banana Juice</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Regions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Producers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" [routerLink]="['/blog']">BLog</a>
+            </li>
+            <li class="nav-item" *ngIf="!(_router.url.includes('/shoppingcart')||_router.url.includes('/checkout'))">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Benefits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  js-scroll-trigger" href="javascript:void(0)">Clients</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </nav>
+    </div><!--container-fluid-->
+  </div><!--menu_bg-->
+
+</header>
+
+<header class="hdr-desktop main_hdr main_hdr2" *ngIf="showhide ">
+  <div class="container-fluid">
+    <div class="head_top">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
+          <div class="logo"><a routerLink=""><img src="../../assets/img/logo.jpg" class="img-fluid" /></a></div>
+        </div><!--col-xl-6-->
+        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10">
+          <div class="search_cartsec">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 custom-width-40">
+                <div class="search_fill">
+                  <p>Tumn e...<br>Aliquam vitae felis a massa ultrices tincidunt Aliquam aliquam iaculis risus sed maximus. Suspendisse pretium lorem turpis, eu imperdiet enim efficitur sit amet.</p>
+                  <form>
+                    <input type="text" placeholder="Search Here...">
+                    <a href="javascript:void(0)" class="search-btn" [routerLink]="['/searchresult']">Search <i class="fa fa-search"></i></a>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 custom-width-60">
+                <div class="hd_social2 mystyle">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="hdr-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="hdr-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="hdr-icon fa fa-google-plus" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                <div class="currency_langmain">
+                  <div class="curancy_lang">
+                    <div class="ucdrop cldrop currency_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Currency
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/india.png"> INR</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-states.png"> USD</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/australia.png"> AUD</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-kingdom.png"> GBP</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/israel.png"> ILR</a>
+                          <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/france.png"> EUR</a>
+                        </div>
+                      </div>
+                    </div><!--currency_drop-->
+                    <div class="ucdrop cldrop lang_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Language
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="javascript:void(0)">English</a>
+                          <a class="dropdown-item" href="javascript:void(0)">French</a>
+                        </div>
+                      </div>
+                    </div><!--lang_drop-->
+                  </div><!--curancy_lang-->
+                </div><!--currency_langmain-->
+                <div class="clearfix"></div>
+                <div class="user_cartmain">
+                  <div class="user_cart">
+                    <!--<div class="ucdrop user_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span><img src="../../assets/img/user_icon.png" /></span>User
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Account</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
+                          <a class="dropdown-item" routerLink="/singin"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                        </div>
+                      </div>
+                    </div-->
+                    <!--user_drop-->
+                    <div class="signin-top">
+                      <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> SignIn</a>
+                    </div>
+                    <div class="ucdrop cart_drop">
+                      <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" [routerLink]="['/shoppingcart']" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span><img src="../../assets/img/cart_icon.png" /></span>Cart
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <div class="dcart_item">
+                            <div class="cart_iteminfo">
+                              <div class="cart_itemimg">
+                                <a href="javascript:void(0)"><img src="../../assets/img/catimg1.jpg" />	</a>
+                              </div>
+                              <div class="cart_itemnm">
+                                <h4><a href="javascript:void(0)">Rome and Lazio</a></h4>
+                                <span class="c_itemp">$84.55</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="dropdown-item chkout" [routerLink]="['/checkout']">Checkout</a>
+                        </div>
+                      </div>
+                    </div><!--cart_drop-->
+                  </div><!--user_cart-->
+                </div><!--user_cartmain-->
+
+              </div>
+            </div><!--row-->
+          </div><!--search_cartsec-->
+        </div><!--col-xl-6-->
+      </div><!--row-->
+    </div><!--head_top-->
+  </div><!--container-fluid-->
+  <div class="menu_bg">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown1">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" [routerLink]="['/categories']">Categories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Drink
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="javascript:void(0)">Soft Drink</a>
+                <a class="dropdown-item" href="javascript:void(0)">Lemon juice</a>
+                <a class="dropdown-item" href="javascript:void(0)">Mango Juice</a>
+                <a class="dropdown-item" href="javascript:void(0)">Banana Juice</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Regions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Producers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" [routerLink]="['/blog']">BLog</a>
+            </li>
+            <li class="nav-item" *ngIf="!(_router.url.includes('/shoppingcart')||_router.url.includes('/checkout'))">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Clients</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div><!--container-fluid-->
+  </div><!--menu_bg-->
+</header>
+
+
+
+<header class="hdr-mobile main_hdrshrk main_hdr" *ngIf="!showhide">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="menu_bg menu2">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown-m" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown-m">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-m" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-close"></i>
+              </button>
+
+              <ul class="navbar-nav">
+                <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" [routerLink]="['/categories']">Categories</a>
+                </li>
+
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Currency
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/india.png"> INR</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-states.png"> USD</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/australia.png"> AUD</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-kingdom.png"> GBP</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/israel.png"> ILR</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/france.png"> EUR</a>
+                  </div>
+
+                </li>
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Language
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                    <a class="dropdown-item" href="javascript:void(0)">English</a>
+                    <a class="dropdown-item" href="javascript:void(0)">French</a>
+                  </div>
+
+                </li>
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Drink
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:void(0)">Soft Drink</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Lemon juice</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Mango Juice</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Banana Juice</a>
+                  </div>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Regions</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Producers</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" [routerLink]="['/blog']">BLog</a>
+                </li>
+                <li class="nav-item" *ngIf="!(_router.url.includes('/shoppingcart')||_router.url.includes('/checkout'))" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Benefits</a>
+                </li>
+
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link  js-scroll-trigger" href="javascript:void(0)">Clients</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </nav>
+        </div> <!-- toggle button -->
+
+        <div class="main-hdr">
+          <div class="logo">
+            <a routerLink=""><img src="../../assets/img/logo.jpg" class="img-fluid" /></a>
+          </div>
+          <div class="search_cartsec">
+            <div class="user_cartmain">
+              <div class="user_cart">
+
+
+                <div class="signin-top">
+                  <a  href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> SignIn</a>
+                </div>
+
+
+                <div class="ucdrop cart_drop">
+                  <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" [routerLink]="['/shoppingcart']" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span><img src="../../assets/img/cart_icon.png" /></span>Cart
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <div class="dcart_item">
+                        <div class="cart_iteminfo">
+                          <div class="cart_itemimg">
+                            <a href="javascript:void(0)"><img src="../../assets/img/catimg1.jpg" />	</a>
+                          </div>
+                          <div class="cart_itemnm">
+                            <h4><a href="javascript:void(0)">Rome and Lazio</a></h4>
+                            <span class="c_itemp">$84.55</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="dropdown-item chkout" [routerLink]="['/checkout']">Checkout</a>
+                    </div>
+                  </div>
+                </div><!--cart_drop-->
+
+              </div><!--user_cart-->
+            </div><!--user_cartmain-->
+        
+
+
+
+          </div>
+
+
+          <div class="search-mobile">
+            <div class="search_fill">
+  
+              <form>
+               <!-- <input type="text" placeholder="Search Here...">
+                <a href="javascript:void(0)" class="search-btn" [routerLink]="['/searchresult']">Search <i class="fa fa-search"></i></a>-->
+  
+  
+                <div class="right">
+                  <div id="search">
+                      <input #search type="search" [placeholder]="filled?'Search':''" [ngClass]="{'filled':filled}"
+                             (click)="filled=!filled" (blur)="filled=search.value?true:false">
+                      <button class="close" *ngIf="filled" (click)="search.value='';filled=false">
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                      </button>
+                  </div>
+                </div>
+  
+              </form>
+            </div>
+          </div> <!-- search part -->
+
+        </div><!-- main-header -->
+
+       
+      </div>
+    </div>
+
+
+
+  </div>
+
+</header>
+<header class="hdr-mobile main_hdr main_hdr2" *ngIf="showhide ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="menu_bg menu2">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-m" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown-m">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-m" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-close"></i>
+              </button>
+
+              <ul class="navbar-nav">
+                <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" [routerLink]="['/categories']">Categories</a>
+                </li>
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Currency
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/india.png"> INR</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-states.png"> USD</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/australia.png"> AUD</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/united-kingdom.png"> GBP</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/israel.png"> ILR</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><img src="../../assets/img/france.png"> EUR</a>
+                  </div>
+
+                </li>
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Language
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                    <a class="dropdown-item" href="javascript:void(0)">English</a>
+                    <a class="dropdown-item" href="javascript:void(0)">French</a>
+                  </div>
+
+                </li>
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Drink
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:void(0)">Soft Drink</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Lemon juice</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Mango Juice</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Banana Juice</a>
+                  </div>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Regions</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Producers</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" [routerLink]="['/blog']">BLog</a>
+                </li>
+                <li class="nav-item" *ngIf="!(_router.url.includes('/shoppingcart')||_router.url.includes('/checkout'))" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link js-scroll-trigger" href="javascript:void(0)">Benefits</a>
+                </li>
+
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                  <a class="nav-link  js-scroll-trigger" href="javascript:void(0)">Clients</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </nav>
+        </div> <!-- toggle button -->
+
+        <div class="main-hdr">
+          <div class="logo">
+            <a routerLink=""><img src="../../assets/img/logo.jpg" class="img-fluid" /></a>
+          </div>
+          <div class="search_cartsec">
+            <div class="user_cartmain">
+              <div class="user_cart">
+
+
+                <div class="signin-top">
+                  <a  href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> SignIn</a>
+                </div>
+
+
+                <div class="ucdrop cart_drop">
+                  <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" [routerLink]="['/shoppingcart']" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span><img src="../../assets/img/cart_icon.png" /></span>Cart
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <div class="dcart_item">
+                        <div class="cart_iteminfo">
+                          <div class="cart_itemimg">
+                            <a href="javascript:void(0)"><img src="../../assets/img/catimg1.jpg" />	</a>
+                          </div>
+                          <div class="cart_itemnm">
+                            <h4><a href="javascript:void(0)">Rome and Lazio</a></h4>
+                            <span class="c_itemp">$84.55</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="dropdown-item chkout" [routerLink]="['/checkout']">Checkout</a>
+                    </div>
+                  </div>
+                </div><!--cart_drop-->
+
+              </div><!--user_cart-->
+            </div><!--user_cartmain-->
+           
+
+
+
+          </div>
+
+          <div class="search-mobile">
+            <div class="search_fill">
+  
+              <form>
+               <!-- <input type="text" placeholder="Search Here...">
+                <a href="javascript:void(0)" class="search-btn" [routerLink]="['/searchresult']">Search <i class="fa fa-search"></i></a>-->
+  
+  
+                <div class="right">
+                  <div id="search">
+                    <input #search type="search" [placeholder]="filled?'Search':''" [ngClass]="{'filled':filled}" 
+                         (click)="filled=!filled" (blur)="filled=search.value?true:false">
+                         <button class="close" *ngIf="filled" (click)="search.value='';filled=false"><i class="fa fa-times" aria-hidden="true"></i>
+                         </button>
+                  </div>
+                </div>
+  
+              </form>
+            </div>
+          </div> <!-- search part -->
+
+        </div><!-- main-header -->
+
+      
+      </div>
+    </div>
+
+
+
+  </div>
+
+</header>
+
+
+
+<!-- Signin Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titlepop" id="exampleModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-log2">
+          <div class="loginform">
+            <form [formGroup]="SinginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <!--<label>Email</label>-->
+                <div class="email-img">
+                  <img src="../../assets/img/emal.png">
+                </div>
+                <input type="email" formControlName="email" class="form-control" placeholder="Enter Your Email*" [ngClass]="{ 'is-invalid': submittedlogin && signin.email.errors }" />
+                <div *ngIf="submittedlogin && signin.email.errors" class="invalid-feedback">
+                  <div *ngIf="signin.email.errors.required">Email is required</div>
+                  <div *ngIf="signin.email.errors.pattern">Email is not valid</div>
+                  <div *ngIf="signin.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <!--<label>Password</label>-->
+                <div class="email-img">
+                  <img src="../../assets/img/password.png">
+                </div>
+                <input type="password" formControlName="password" class="form-control" placeholder="Enter Your Password*" [ngClass]="{ 'is-invalid': submittedlogin && signin.password.errors }" />
+                <div *ngIf="submittedlogin && signin.password.errors" class="invalid-feedback">
+                  <div *ngIf="signin.password.errors.required">Password is required</div>
+                  <div *ngIf="signin.password.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">By clicking join now, you agree to TUMN User Agreement, <a href="javascript:void(0)" class="dblock">Privacy Policy, and Cookie policy</a>.</label>
+                </div>
+              </div>
+
+              <div class="f-botm">
+                <button type="submit" class="btn redbtn">Sign In</button>
+                <div class="rtl-form">
+                  <a href="javascript:void(0)"data-toggle="modal" data-target="#forgotModal" data-dismiss="modal" class="forlink">Forgot Password?</a>
+                </div>
+              </div>
+
+              <div class="popdiv">
+                <h6>Or Login with</h6>
+              </div>
+
+              <div class="form-social">
+
+                <a href="javascript:void(0)" class="fb btn">
+                  <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                </a>
+                <a href="javascript:void(0)"class="google btn">
+                  <i class="fa fa-google fa-fw">
+                  </i> Login with Google+
+                </a>
+
+                <p>Click here to <a href="javascript:void(0)" class="createone" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Create one</a></p>
+
+              </div>
+
+
+            </form>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- SignUp Modal -->
+
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titlepop" id="signupModalLabel">Register here</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-log2">
+          <div class="signform">
+            <form [formGroup]="SingupForm" (ngSubmit)="onSignupSubmit()">
+              <div class="form-group mob0">
+                <div class="row">
+                  <div class="col-md-6">
+
+                    <label>First Name</label>
+                    <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submittedSignup && signup.firstName.errors }" />
+                    <div *ngIf="submittedSignup && signup.firstName.errors" class="invalid-feedback">
+                      <div *ngIf="signup.firstName.errors.required">First Name is required</div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <label>Last Name</label>
+                    <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submittedSignup && signup.lastName.errors }" />
+                    <div *ngIf="submittedSignup && signup.lastName.errors" class="invalid-feedback">
+                      <div *ngIf="signup.lastName.errors.required">Last Name is required</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submittedSignup && signup.email.errors }" />
+                <div *ngIf="submittedSignup && signup.email.errors" class="invalid-feedback">
+                  <div *ngIf="signup.email.errors.required">Email is required</div>
+                  <div *ngIf="signup.email.errors.pattern">Email is not valid</div>
+                  <div *ngIf="signup.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submittedSignup && signup.password.errors }" />
+                <div *ngIf="submittedSignup && signup.password.errors" class="invalid-feedback">
+                  <div *ngIf="signup.password.errors.required">Password is required</div>
+                  <div *ngIf="signup.password.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submittedSignup && signup.confirmPassword.errors }" />
+                <div *ngIf="submittedSignup && signup.confirmPassword.errors" class="invalid-feedback">
+                  <div *ngIf="signup.confirmPassword.errors.required">Confirm Password is required</div>
+                  <div *ngIf="signup.confirmPassword.errors.mustMatch">Passwords must match</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck">
+                  <label class="custom-control-label" for="customCheck">By clicking join now, you agree to TUMN User Agreement, <a href="javascript:void(0)" class="dblock">Privacy Policy, and Cookie policy</a>.</label>
+                </div>
+              </div>
+
+              <div class="f-botm">
+                <button type="submit" class="btn redbtn">Register</button>
+
+              </div>
+
+
+
+              <div class="popdiv">
+                <h6>Or Login with</h6>
+              </div>
+
+              <div class="form-social">
+
+                <a href="javascript:void(0)" class="fb btn">
+                  <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                </a>
+                <a href="javascript:void(0)" class="google btn">
+                  <i class="fa fa-google fa-fw">
+                  </i> Login with Google+
+                </a>
+
+                <p>Already have an account? <a href="javascript:void(0)" class="createone" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal">SignIn</a></p>
+
+              </div>
+
+
+            </form>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Forgot password Modal -->
+<div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titlepop" id="forgotModalLabel">Forgot Password?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-log2">
+          <div class="forgotform">
+            <form [formGroup]="ForgotPasswordForm" (ngSubmit)="onForgotSubmit()">
+              <div class="form-group">
+                <label>Enter your Email *</label>
+                <input type="email" formControlName="email" class="form-control" placeholder="" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Email is required</div>
+                  <div *ngIf="f.email.errors.pattern">Email is not valid</div>
+                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Retype Your Email *</label>
+                <input type="email" formControlName="confirmemail" class="form-control" placeholder="" [ngClass]="{ 'is-invalid': submitted && f.confirmemail.errors }" />
+                <div *ngIf="submitted && f.confirmemail.errors" class="invalid-feedback">
+                  <div *ngIf="f.confirmemail.errors.required">Email is required</div>
+                  <div *ngIf="f.confirmemail.errors.mustMatch">Email must match</div>
+                  <div *ngIf="f.email.errors.pattern">Email is not valid</div>
+                  <div *ngIf="f.confirmemail.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+
+              <div class="f-botm forgotp">
+                <button type="submit" class="btn redbtn">Submit</button>
+                <div class="rtl-form">
+                  <p>Already have an account?</p>
+                  <p><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal"> Sign In</a></p>
+                </div>
+              </div>
+
+
+            </form>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

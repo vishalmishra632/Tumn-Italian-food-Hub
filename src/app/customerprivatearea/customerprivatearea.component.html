@@ -1,0 +1,453 @@
+<section class="site_breadcurm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/myaccount']">My Account</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Messages</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contactpage ads-col">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="myaccount-title">
+          <h1>Your Messages</h1>
+        </div>
+
+        <div class="message_details">
+          <!-- Nav tabs -->
+          <div class="bd-example bd-example-tabs" >
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active show" id="index-tab" data-toggle="tab" href="#inbox" role="tab" aria-controls="inbox" aria-selected="true">Inbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Out Box</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" (click)="reset();">New Message</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show inbox_tab_content" id="inbox" role="tabpanel" aria-labelledby="inbox-tab" >
+                <div class="inbox_mail_list mail_list" *ngIf="hideSelected">
+                  <ul class="">
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title" >Sam</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Anderson</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Loviesh</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Johnny</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Sam</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Anderson</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Loviesh</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="toggle()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Johnny</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="message_inner">
+                  <div class="inner_msg_header">
+                    <div class="back-button">
+                      <a  (click)="toggle()" *ngIf="showSelected"  class="btn btn-back">Back</a>
+                    </div>
+
+
+
+                    <div *ngIf="showSelected">
+                      <div class="msg_subject">
+                        <div class="row">
+                          <div class="col-xl-6">
+                            <h4>Subject</h4>
+                          </div>
+                          <div class="col-xl-6">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="inner_msg_content">
+                        <div class="from_email">From: <span>Jolly (jolly123@abc.com)</span></div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac est dictum, malesuada odio eu, bibendum risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at mauris quis tortor sodales maximus sit amet sed erat. Morbi sit amet odio suscipit, luctus erat et, pretium dolor. Pellentesque ut elit rhoncus, pharetra leo at, tincidunt libero.
+                        </p>
+
+                        <p>
+                          convallis maximus eros, a aliquet risus varius aliquam. Mauris eget porta enim. Donec sollicitudin tortor velit, vitae tincidunt mi sodales a. Suspendisse sed hendrerit libero. Nunc eget orci ut nisi dignissim porta ut eget massa.
+                        </p>
+
+                        <div class="attachement_file">
+                          <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span><a href="javascript:void(0)">food-menu-item.pdf</a></p>
+                        </div>
+                      </div>
+                      <div class="inner_msg_footer">
+                        <div class="forward">
+                          <a href="javascript:void(0)" class="btn btnReply">Reply</a>
+                          <a href="javascript:void(0)" class="btn btnForward">Forward</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                    
+
+
+              </div>
+
+
+
+
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="mail_list" *ngIf="hideOutbox">
+                  <ul class="">
+
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Sam</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Anderson</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Loviesh</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Johnny</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Sam</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Anderson</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Loviesh</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor sit amet, consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a (click)="togglebutton()" class="pointer">
+                        <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-2">
+                            <span class="msg_title">Johnny</span>
+                          </div>
+                          <div class="col-xl-7 col-lg-7 col-md-7">
+                            <p class="msg_content">Lorem ipsum dolor consectetur </p>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 col-md-3">
+                            <p class="msg_attachment">13 Jan 2019, 11:10 PM</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="message_inner" *ngIf="showOutboxs">
+                  <div class="inner_msg_header">
+                    <div class="back-button">
+                      <a  (click)="togglebutton()" *ngIf="showOutboxs" class="btn btn-back">Back</a>
+                    </div>
+                    <div class="msg_subject">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <h4>Subject</h4>
+                        </div>
+                        <div class="col-xl-6">
+                          <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span>13 Jan 2019, 11:10 PM</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner_msg_content">
+                    <div class="from_email">From: <span>Jolly (jolly123@abc.com)</span></div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac est dictum, malesuada odio eu, bibendum risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at mauris quis tortor sodales maximus sit amet sed erat. Morbi sit amet odio suscipit, luctus erat et, pretium dolor. Pellentesque ut elit rhoncus, pharetra leo at, tincidunt libero.
+                    </p>
+
+                    <p>
+                      convallis maximus eros, a aliquet risus varius aliquam. Mauris eget porta enim. Donec sollicitudin tortor velit, vitae tincidunt mi sodales a. Suspendisse sed hendrerit libero. Nunc eget orci ut nisi dignissim porta ut eget massa.
+                    </p>
+
+                    <div class="attachement_file">
+                      <p class="msg_attachment"><span class="attach_icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span><a href="javascript:void(0)">food-menu-item.pdf</a></p>
+                    </div>
+                  </div>
+                  <div class="inner_msg_footer">
+                    <div class="forward">
+                      <a href="javascript:void(0)" class="btn btnReply">Reply</a>
+                      <a href="javascript:void(0)" class="btn btnForward">Forward</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="compose_mail_block">
+                  <form [formGroup]="SendForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-1 col-form-label">To :</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" formControlName="type" placeholder="" [ngClass]="{ 'is-invalid': submitted && f.type.errors }"/>
+                        <div *ngIf="submitted && f.type.errors" class="invalid-feedback">
+                          <div *ngIf="f.type.errors.required">Type is required</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-1 col-form-label">Subject :</label>
+                      <div class="col-sm-3">
+                        <input type="text" formControlName="subject" class="form-control" placeholder="" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }" />
+                        <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                          <div *ngIf="f.subject.errors.required">Subject is required</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group textarea_input">
+                      <label for="exampleFormControlTextarea1">Write Your Message Here</label>
+                      <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="1" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+                      <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                        <div *ngIf="f.message.errors.required">Message is required</div>
+                      </div>
+                    </div>
+
+                    <div class="sendmsg">
+                      <button type="submit" class="btn sendbtn">Send</button>
+                      <a href="javascript:void(0)" class="btn attachbtn"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="addnew-col goback">
+          <a [routerLink]="['/myaccount']"  class="btn updatebtn"><i class="fa fa-caret-left" aria-hidden="true"></i> Go Back to My Account</a>
+          <a routerLink="" class="btn orange2btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Home</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
